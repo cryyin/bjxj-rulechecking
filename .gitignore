@@ -1,35 +1,10 @@
 .vscode/
 __pycache__/
 results/
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@cryyin 
-cryyin
-/
-bjxj-rulechecking
-Private
-1
-00
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-Settings
-bjxj-rulechecking/.gitignore
-@cryyin
-cryyin Initial commit
-Latest commit 8408620 21 minutes ago
- History
- 1 contributor
-129 lines (105 sloc)  1.76 KB
+图纸/
+.rar
+.zip
+
   
 # Byte-compiled / optimized / DLL files
 __pycache__/

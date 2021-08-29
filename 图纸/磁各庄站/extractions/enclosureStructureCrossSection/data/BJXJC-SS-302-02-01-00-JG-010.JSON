@@ -1,0 +1,96 @@
+{
+    "section": [
+        {
+            "title": "围护结构1-1剖面图",
+            "wall_text": [
+                "200厚钢筋混凝土挡墙",
+                "200厚钢筋混凝土挡墙"
+            ],
+            "ground_water_level": [
+                "层间潜水（三）17.16",
+                "层间潜水～承压水（四）13.66"
+            ],
+            "depth": 20799.0,
+            "embedment_depth": 6000.0,
+            "bottom_level": 16.291,
+            "support_structure": [
+                {
+                    "id": 1,
+                    "category": "HC",
+                    "level": 35.701,
+                    "distance": 7270.0
+                },
+                {
+                    "id": 2,
+                    "category": "ZC",
+                    "level": 28.431,
+                    "distance": 6700.0
+                },
+                {
+                    "id": 3,
+                    "category": "ZC",
+                    "level": 21.731,
+                    "distance": 1500.0
+                },
+                {
+                    "id": 4,
+                    "category": "HC",
+                    "level": 20.231,
+                    "distance": 3740.0
+                }
+            ],
+            "bounding": [
+                "4864941,-438633",
+                "4864941,-410834",
+                "4893141,-410834",
+                "4893141,-438633"
+            ]
+        },
+        {
+            "title": "围护结构2-2剖面图",
+            "wall_text": [
+                "200厚钢筋混凝土挡墙",
+                "200厚钢筋混凝土挡墙"
+            ],
+            "ground_water_level": [
+                "层间潜水（三）17.16",
+                "层间潜水～承压水（四）13.66"
+            ],
+            "depth": 20900.0,
+            "embedment_depth": 6000.0,
+            "bottom_level": 16.19,
+            "support_structure": [
+                {
+                    "id": 1,
+                    "category": "ZC",
+                    "level": 35.6,
+                    "distance": 7270.0
+                },
+                {
+                    "id": 2,
+                    "category": "ZC",
+                    "level": 28.33,
+                    "distance": 6700.0
+                },
+                {
+                    "id": 3,
+                    "category": "ZC",
+                    "level": 21.63,
+                    "distance": 1500.0
+                },
+                {
+                    "id": 4,
+                    "category": "HC",
+                    "level": 20.13,
+                    "distance": 3740.0
+                }
+            ],
+            "bounding": [
+                "4904511,-438633",
+                "4904511,-410733",
+                "4932711,-410733",
+                "4932711,-438633"
+            ]
+        }
+    ]
+}

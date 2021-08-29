@@ -1,0 +1,1803 @@
+{
+    "tableGroup": [
+        {
+            "bounding": [
+                "212964,-91665",
+                "212964,-85287",
+                "227621,-85287",
+                "227621,-91665"
+            ],
+            "table": [
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "施工工况"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "施工工况"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "基坑设计深度（m）"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "基坑设计深度（m）"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "基坑设计深度（m）"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "基坑设计深度（m）"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "基坑设计深度（m）"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "施工工况"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "施工工况"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "≤5"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "5~10"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "10~15"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "15~20"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "＞20"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "基坑开挖",
+                                "深度",
+                                "（m）"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "≤5"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1次/1d"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1次/2d"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1次/3d"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1次/3d"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1次/3d"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "基坑开挖",
+                                "深度",
+                                "（m）"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "5~10"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1次/1d"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1次/2d"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1次/2d"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1次/2d"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "基坑开挖",
+                                "深度",
+                                "（m）"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "10~15"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1次/1d"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1次/1d"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1次/2d"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "基坑开挖",
+                                "深度",
+                                "（m）"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "15~20"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "（1次~2次）/1d"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "（1次~2次）/1d"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "基坑开挖",
+                                "深度",
+                                "（m）"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "＞20"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "2次/1d"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "基坑施工完成后"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "基坑施工完成后"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1~7d，1次/1d;7~15d，1次/2d;15~30d，1次/3d;30d以后，1次/周;",
+                                "经数据分析确认达到基本稳定后，1次/月。"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1~7d，1次/1d;7~15d，1次/2d;15~30d，1次/3d;30d以后，1次/周;",
+                                "经数据分析确认达到基本稳定后，1次/月。"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1~7d，1次/1d;7~15d，1次/2d;15~30d，1次/3d;30d以后，1次/周;",
+                                "经数据分析确认达到基本稳定后，1次/月。"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1~7d，1次/1d;7~15d，1次/2d;15~30d，1次/3d;30d以后，1次/周;",
+                                "经数据分析确认达到基本稳定后，1次/月。"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1~7d，1次/1d;7~15d，1次/2d;15~30d，1次/3d;30d以后，1次/周;",
+                                "经数据分析确认达到基本稳定后，1次/月。"
+                            ],
+                            "table": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "bounding": [
+                "213126,-78715",
+                "213126,-69453",
+                "241813,-69453",
+                "241813,-78715"
+            ],
+            "table": [
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "序号"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "监测项目"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "监测仪器及元件"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "测点布置"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "监测精度"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "变形控制标准"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "监测频率"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "基坑及其周围",
+                                "环境观察"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "对开挖后的工程地质及水文地质的观察记录",
+                                "（地层、节理裂隙形态及充填性、含水情况等）;",
+                                "支护裂隙和支护状态的观察描述;邻近建（构）",
+                                "筑物及地面的变形、裂缝等的观察描述。"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "全过程，1次/天，情况异常时加密监测频率。"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "2"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "地表沉降"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "水准仪"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "平面布置见监控量测平面图，纵向每20m左右",
+                                "一个监测断面，基坑每侧2个监测点;",
+                                "主监测断面80m一个，基坑每侧4个监测点;"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "%%P0.3mm"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "30mm,变化速率2mm/d"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "详见本图《基坑施工监测频率表》 "
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "3"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "桩顶竖向位移"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "水准仪"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "横向布置如图，纵向每20m左右一监测断面。"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "%%P0.3mm"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "10mm,变化速率1mm/d"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "详见本图《基坑施工监测频率表》 "
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "4"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "桩顶水平位移"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "经纬仪或全站仪"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "横向布置如图，纵向每20m左右一监测断面。"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "%%P0.3mm"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "10mm,变化速率2mm/d"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "详见本图《基坑施工监测频率表》 "
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "5"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "桩体水平位移"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "测斜仪"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "横向布置如图，纵向每40m左右一监测断面。",
+                                "沿桩竖直方向上间距为1m，监测总深度为桩长。"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "0.02mm",
+                                "/0.5m"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "30mm,变化速率2mm/d"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "详见本图《基坑施工监测频率表》 "
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "6"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "支撑轴力"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "应变计、轴力计、",
+                                "频率接收仪"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "横向布置如图，纵向每40m左右一监测断面。"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "0.15%%%F.s"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "详见钢支撑轴力表"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "详见本图《基坑施工监测频率表》 "
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "7"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "地下水位"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "电测水位计、PVC管"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "横向布置如图，纵向每40m左右一监测断面。"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "5.0mm"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "基坑底以下1m，0.5m/d"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1次/（1~2）天"
+                            ],
+                            "table": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "bounding": [
+                "250439,-88746",
+                "250439,-83249",
+                "261943,-83249",
+                "261943,-88746"
+            ],
+            "table": [
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "预警级别"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "预警状态描述"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "黄色"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "变形量和变化速率值“双控”实测值标均达控制值的70%%%～85%%%之",
+                                "间时;或“双控指标”之一达到控制值的85%%%～100%%%之间而另一",
+                                "指标未达到该值时。"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "橙色"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "变形量和变化速率值“双控”实测值标均达控制值的85%%%～100%%%之",
+                                "间时;或双控指标之一达到控制值而另一指标未达到时。"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "红色"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "变形量和变化速率值“双控”实测值标均达控制值;或实际变化速率",
+                                "出现急剧增长时;或竖井或横通道支护混凝土表面出现裂缝，同时裂",
+                                "缝开始渗水。"
+                            ],
+                            "table": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "bounding": [
+                "264750,-78490",
+                "264750,-68510",
+                "272050,-68510",
+                "272050,-78490"
+            ],
+            "table": [
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "中",
+                                "国",
+                                "铁",
+                                "建",
+                                "中铁第五勘察设计院集团有限公司",
+                                "CHINA RAILWAY FIFTH SURVEY AND DESIGN GROUP CO.,LTD."
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "本图纸版权属中铁第五勘察设计院集团有限公司所有，",
+                                "未经授权，不得复制。（本公司与客户另有约定的，从其约",
+                                "定）",
+                                "The copyright of this drawing is reserved by CHINA RAILWAY FIFTH SURVEY",
+                                "AND DESIGN GROUP CO.,LTD.No one can reproduce without authorization ."
+                            ],
+                            "table": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "bounding": [
+                "265050,-96910",
+                "265050,-78860",
+                "271750,-78860",
+                "271750,-96910"
+            ],
+            "table": [
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "项目负责人",
+                                "PROJECT MANAGER"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "项目负责人",
+                                "PROJECT MANAGER"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "李长安"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "李长安"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "设计签字",
+                                "SIGNATURE"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "设计签字",
+                                "SIGNATURE"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "设计签字",
+                                "SIGNATURE"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "设计签字",
+                                "SIGNATURE"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "专业负责人",
+                                "DIVISION CHIEF"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "单  伟"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "设计人",
+                                "DESIGNED BY"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "李长安"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "验证签字",
+                                "VERIFICATION"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "验证签字",
+                                "VERIFICATION"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "验证签字",
+                                "VERIFICATION"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "验证签字",
+                                "VERIFICATION"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "校  核",
+                                "CHECKED BY"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "刘雪斌"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "审  核",
+                                "VERIFIED BY"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "张  伟"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "院  审",
+                                "APPROVED BY"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "吴林林"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "会  签",
+                                "CONFIRMATION"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "会  签",
+                                "CONFIRMATION"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "会  签",
+                                "CONFIRMATION"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "会  签",
+                                "CONFIRMATION"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "总体审定",
+                                "GENERAL APPROVAL"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "总体审定",
+                                "GENERAL APPROVAL"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "系统审定",
+                                "SYSTEMATIC APPROVAL"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "系统审定",
+                                "SYSTEMATIC APPROVAL"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "会签专业",
+                                "CONFIRMATION"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "签名",
+                                "NAME"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "会签专业",
+                                "CONFIRMATION"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "签名",
+                                "NAME"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "项目名称",
+                                "PROJECT NAME",
+                                "北京轨道交通新机场线一期工程"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "项目名称",
+                                "PROJECT NAME",
+                                "北京轨道交通新机场线一期工程"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "项目名称",
+                                "PROJECT NAME",
+                                "北京轨道交通新机场线一期工程"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "项目名称",
+                                "PROJECT NAME",
+                                "北京轨道交通新机场线一期工程"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "工程号",
+                                "PROJECT NO.",
+                                "2015DT01"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "工程号",
+                                "PROJECT NO.",
+                                "2015DT01"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "工程号",
+                                "PROJECT NO.",
+                                "2015DT01"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "工程号",
+                                "PROJECT NO.",
+                                "2015DT01"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图册名称",
+                                "ALBUM NAME",
+                                "磁各庄站",
+                                "车站结构",
+                                "车站主体支护结构"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图册名称",
+                                "ALBUM NAME",
+                                "磁各庄站",
+                                "车站结构",
+                                "车站主体支护结构"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图册名称",
+                                "ALBUM NAME",
+                                "磁各庄站",
+                                "车站结构",
+                                "车站主体支护结构"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图册名称",
+                                "ALBUM NAME",
+                                "磁各庄站",
+                                "车站结构",
+                                "车站主体支护结构"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图名",
+                                "DRAWING NAME",
+                                "监控量测剖面图"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图名",
+                                "DRAWING NAME",
+                                "监控量测剖面图"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图名",
+                                "DRAWING NAME",
+                                "监控量测剖面图"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图名",
+                                "DRAWING NAME",
+                                "监控量测剖面图"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图号",
+                                "SHEET NO.",
+                                "BJXJC-SS-302-02-01-00-JG-022"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图号",
+                                "SHEET NO.",
+                                "BJXJC-SS-302-02-01-00-JG-022"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图号",
+                                "SHEET NO.",
+                                "BJXJC-SS-302-02-01-00-JG-022"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图号",
+                                "SHEET NO.",
+                                "BJXJC-SS-302-02-01-00-JG-022"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "设计阶段",
+                                "PHASE",
+                                "施工设计"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "设计阶段",
+                                "PHASE",
+                                "施工设计"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "出图日期",
+                                "DATE",
+                                "2017年03月"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "出图日期",
+                                "DATE",
+                                "2017年03月"
+                            ],
+                            "table": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "section": [
+        {
+            "title": "围护结构3-3剖面图（加宽段）",
+            "wall_text": [
+                "200厚钢筋混凝土挡墙",
+                "200厚钢筋混凝土挡墙"
+            ],
+            "ground_water_level": [
+                "层间潜水（三）17.16",
+                "层间潜水～承压水（四）13.66"
+            ],
+            "depth": 21320.0,
+            "embedment_depth": 5800.0,
+            "bottom_level": 15.77,
+            "support_structure": [
+                {
+                    "id": 1,
+                    "category": "ZC",
+                    "level": 35.38,
+                    "distance": 7270.0
+                },
+                {
+                    "id": 2,
+                    "category": "ZC",
+                    "level": 28.11,
+                    "distance": 6700.0
+                },
+                {
+                    "id": 3,
+                    "category": "ZC",
+                    "level": 21.41,
+                    "distance": 1500.0
+                },
+                {
+                    "id": 4,
+                    "category": "HC",
+                    "level": 19.91,
+                    "distance": 3940.0
+                }
+            ],
+            "bounding": [
+                "4953621,-438633",
+                "4953621,-410513",
+                "4982521,-410513",
+                "4982521,-438633"
+            ]
+        },
+        {
+            "title": "围护结构4-4剖面图",
+            "wall_text": [
+                "200厚钢筋混凝土挡墙",
+                "200厚钢筋混凝土挡墙"
+            ],
+            "ground_water_level": [
+                "层间潜水（三）17.13",
+                "层间潜水～承压水（四）12.43"
+            ],
+            "depth": 21353.0,
+            "embedment_depth": 6000.0,
+            "bottom_level": 15.717,
+            "support_structure": [
+                {
+                    "id": 1,
+                    "category": "HC",
+                    "level": 35.127,
+                    "distance": 7270.0
+                },
+                {
+                    "id": 2,
+                    "category": "ZC",
+                    "level": 27.857,
+                    "distance": 6700.0
+                },
+                {
+                    "id": 3,
+                    "category": "ZC",
+                    "level": 21.157,
+                    "distance": 1500.0
+                },
+                {
+                    "id": 4,
+                    "category": "HC",
+                    "level": 19.757,
+                    "distance": 3740.0
+                }
+            ],
+            "bounding": [
+                "4994871,-438633",
+                "4994871,-410280",
+                "5023071,-410280",
+                "5023071,-438633"
+            ]
+        },
+        {
+            "title": "围护结构5-5剖面图",
+            "wall_text": [
+                "200厚钢筋混凝土挡墙",
+                "200厚钢筋混凝土挡墙"
+            ],
+            "ground_water_level": [
+                "上层滞水（一）35.45",
+                "层间潜水（三）17.13",
+                "层间潜水～承压水（四）12.43"
+            ],
+            "depth": 21630.0,
+            "embedment_depth": 6000.0,
+            "bottom_level": 15.46,
+            "support_structure": [
+                {
+                    "id": 1,
+                    "category": "HC",
+                    "level": 34.87,
+                    "distance": 7270.0
+                },
+                {
+                    "id": 2,
+                    "category": "ZC",
+                    "level": 27.6,
+                    "distance": 6700.0
+                },
+                {
+                    "id": 3,
+                    "category": "ZC",
+                    "level": 20.9,
+                    "distance": 1500.0
+                },
+                {
+                    "id": 4,
+                    "category": "HC",
+                    "level": 19.4,
+                    "distance": 3740.0
+                }
+            ],
+            "bounding": [
+                "5035939,-438858",
+                "5035939,-410003",
+                "5064139,-410003",
+                "5064139,-438858"
+            ]
+        }
+    ]
+}

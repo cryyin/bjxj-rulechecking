@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>上传文件</title>
+</head>
+<body>
+<!--表单中enctype="multipart/form-data"的意思，是设置表单的MIME编码。-->
+<!--默认情况，这个编码格式是application/x-www-form-urlencoded，不能用于文件上传；-->
+<!--只有使用了multipart/form-data，才能完整的传递文件数据，进行下面的操作. -->
+    <form id="my_form" name="form" action="/receive" method="POST"  enctype="multipart/form-data" >
+    	<p><br><input type="text" name="key"></p>
+    	<p><br><input type="text" name="checkId"></p>
+        <input name="zip_file" id="my_file"  type="file" />
+        <input type="submit" value="提交"  />
+    </form>
+</body>
+</html>

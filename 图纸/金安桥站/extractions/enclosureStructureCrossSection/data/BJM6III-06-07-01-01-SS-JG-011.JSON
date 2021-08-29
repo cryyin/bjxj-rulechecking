@@ -1,0 +1,47 @@
+{
+    "section": [
+        {
+            "title": "1-1横剖面",
+            "wall_text": [
+                "钢筋混凝土挡墙",
+                "钢筋混凝土挡墙"
+            ],
+            "ground_water_level": [],
+            "depth": 20684.0,
+            "embedment_depth": 8500.0,
+            "bottom_level": 0.0,
+            "support_structure": [
+                {
+                    "id": 1,
+                    "category": "HC",
+                    "level": 0.0,
+                    "distance": 6000.0
+                },
+                {
+                    "id": 2,
+                    "category": "ZC",
+                    "level": 0.0,
+                    "distance": 6000.0
+                },
+                {
+                    "id": 3,
+                    "category": "ZC",
+                    "level": 0.0,
+                    "distance": 2000.0
+                },
+                {
+                    "id": 4,
+                    "category": "HC",
+                    "level": 0.0,
+                    "distance": 4184.0
+                }
+            ],
+            "bounding": [
+                "-221560,-28346",
+                "-221560,4909",
+                "-192859,4909",
+                "-192859,-28346"
+            ]
+        }
+    ]
+}

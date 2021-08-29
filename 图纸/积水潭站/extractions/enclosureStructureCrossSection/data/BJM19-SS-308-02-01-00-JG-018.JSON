@@ -1,0 +1,52 @@
+{
+    "section": [
+        {
+            "title": "7-7横剖面图 ",
+            "wall_text": [],
+            "ground_water_level": [
+                "地下水位标高19.41~21.86"
+            ],
+            "depth": 24839.0,
+            "embedment_depth": 7000.0,
+            "bottom_level": 23161.0,
+            "support_structure": [
+                {
+                    "id": 1,
+                    "category": "ZC",
+                    "level": 45481.0,
+                    "distance": 6700.0
+                },
+                {
+                    "id": 2,
+                    "category": "ZC",
+                    "level": 38781.0,
+                    "distance": 6050.0
+                },
+                {
+                    "id": 3,
+                    "category": "ZC",
+                    "level": 32731.0,
+                    "distance": 5067.0
+                },
+                {
+                    "id": 4,
+                    "category": "ZC",
+                    "level": 27664.0,
+                    "distance": 1500.0
+                },
+                {
+                    "id": 5,
+                    "category": "HC",
+                    "level": 26164.0,
+                    "distance": 3003.0
+                }
+            ],
+            "bounding": [
+                "10479,-149712",
+                "10479,-116601",
+                "36789,-116601",
+                "36789,-149712"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,744 @@
+{
+    "tableGroup": [
+        {
+            "bounding": [
+                "-245746,-121964",
+                "-245746,-118604",
+                "-240946,-118604",
+                "-240946,-121964"
+            ],
+            "table": [
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "支撑道数"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "设计值"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "预加轴力"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "第一道钢支撑"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "826"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "300"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "第二道钢支撑"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "2205"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "640"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "第三道钢支撑"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "3209"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "470"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "第四道钢支撑"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "2774"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "403"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "换撑"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1331"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "bounding": [
+                "-243525,-154253",
+                "-243525,-136203",
+                "-236825,-136203",
+                "-236825,-154253"
+            ],
+            "table": [
+                {
+                    "row": [
+                        {
+                            "category": "TABLE",
+                            "data": [],
+                            "table": [
+                                {
+                                    "row": [
+                                        {
+                                            "category": "TEXT",
+                                            "data": [
+                                                "项目负责人",
+                                                "PROJECT MANAGER"
+                                            ],
+                                            "table": []
+                                        },
+                                        {
+                                            "category": "TEXT",
+                                            "data": [
+                                                "夏瑞萌"
+                                            ],
+                                            "table": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "设计签字",
+                                "SIGNATURE"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TABLE",
+                            "data": [],
+                            "table": [
+                                {
+                                    "row": [
+                                        {
+                                            "category": "TEXT",
+                                            "data": [
+                                                "专业负责人",
+                                                "DIVISION CHIEF"
+                                            ],
+                                            "table": []
+                                        },
+                                        {
+                                            "category": "TEXT",
+                                            "data": [
+                                                "邵国鑫"
+                                            ],
+                                            "table": []
+                                        },
+                                        {
+                                            "category": "TEXT",
+                                            "data": [],
+                                            "table": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "row": [
+                                        {
+                                            "category": "TEXT",
+                                            "data": [
+                                                "设计人",
+                                                "DESIGNED BY"
+                                            ],
+                                            "table": []
+                                        },
+                                        {
+                                            "category": "TEXT",
+                                            "data": [
+                                                "田弋弘"
+                                            ],
+                                            "table": []
+                                        },
+                                        {
+                                            "category": "TEXT",
+                                            "data": [],
+                                            "table": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "验证签字",
+                                "VERIFICATION"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TABLE",
+                            "data": [],
+                            "table": [
+                                {
+                                    "row": [
+                                        {
+                                            "category": "TEXT",
+                                            "data": [
+                                                "校  核",
+                                                "CHECKED BY"
+                                            ],
+                                            "table": []
+                                        },
+                                        {
+                                            "category": "TEXT",
+                                            "data": [
+                                                "邵国鑫"
+                                            ],
+                                            "table": []
+                                        },
+                                        {
+                                            "category": "TEXT",
+                                            "data": [],
+                                            "table": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "row": [
+                                        {
+                                            "category": "TEXT",
+                                            "data": [
+                                                "审  核",
+                                                "VERIFIED BY"
+                                            ],
+                                            "table": []
+                                        },
+                                        {
+                                            "category": "TEXT",
+                                            "data": [
+                                                "周婷婷"
+                                            ],
+                                            "table": []
+                                        },
+                                        {
+                                            "category": "TEXT",
+                                            "data": [],
+                                            "table": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "row": [
+                                        {
+                                            "category": "TEXT",
+                                            "data": [
+                                                "院  审",
+                                                "APPROVED BY"
+                                            ],
+                                            "table": []
+                                        },
+                                        {
+                                            "category": "TEXT",
+                                            "data": [
+                                                "曾德光"
+                                            ],
+                                            "table": []
+                                        },
+                                        {
+                                            "category": "TEXT",
+                                            "data": [],
+                                            "table": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "会  签",
+                                "CONFIRMATION"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TABLE",
+                            "data": [],
+                            "table": [
+                                {
+                                    "row": [
+                                        {
+                                            "category": "TEXT",
+                                            "data": [
+                                                "总体审定",
+                                                "GENERAL APPROVAL"
+                                            ],
+                                            "table": []
+                                        },
+                                        {
+                                            "category": "TEXT",
+                                            "data": [],
+                                            "table": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "row": [
+                                        {
+                                            "category": "TEXT",
+                                            "data": [
+                                                "系统审定",
+                                                "SYSTEMATIC APPROVAL"
+                                            ],
+                                            "table": []
+                                        },
+                                        {
+                                            "category": "TEXT",
+                                            "data": [],
+                                            "table": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "row": [
+                                        {
+                                            "category": "TABLE",
+                                            "data": [],
+                                            "table": [
+                                                {
+                                                    "row": [
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [
+                                                                "会签专业",
+                                                                "CONFIRMATION"
+                                                            ],
+                                                            "table": []
+                                                        },
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [
+                                                                "签名",
+                                                                "NAME"
+                                                            ],
+                                                            "table": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "row": [
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        },
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "row": [
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        },
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "row": [
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        },
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "row": [
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        },
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "row": [
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        },
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "row": [
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        },
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "category": "TABLE",
+                                            "data": [],
+                                            "table": [
+                                                {
+                                                    "row": [
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [
+                                                                "会签专业",
+                                                                "CONFIRMATION"
+                                                            ],
+                                                            "table": []
+                                                        },
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [
+                                                                "签名",
+                                                                "NAME"
+                                                            ],
+                                                            "table": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "row": [
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        },
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "row": [
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        },
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "row": [
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        },
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "row": [
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        },
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "row": [
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        },
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "row": [
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        },
+                                                        {
+                                                            "category": "TEXT",
+                                                            "data": [],
+                                                            "table": []
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "项目名称",
+                                "PROJECT NAME",
+                                "北京地铁19号线一期工程"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "工程号",
+                                "PROJECT NO.",
+                                "2015168"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图册名称",
+                                "ALBUM NAME",
+                                "积水潭站",
+                                "车站结构",
+                                "主体围护结构施工图"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图名",
+                                "DRAWING NAME",
+                                "3-3横剖面图"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图号",
+                                "SHEET NO.",
+                                "BJM19-SS-308-02-01-00-JG-   "
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TABLE",
+                            "data": [],
+                            "table": [
+                                {
+                                    "row": [
+                                        {
+                                            "category": "TEXT",
+                                            "data": [
+                                                "设计阶段",
+                                                "PHASE",
+                                                "施设"
+                                            ],
+                                            "table": []
+                                        },
+                                        {
+                                            "category": "TEXT",
+                                            "data": [
+                                                "出图日期",
+                                                "DATE",
+                                                "2016年07月"
+                                            ],
+                                            "table": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1000 @@
+{
+    "tableGroup": [
+        {
+            "bounding": [
+                "4999700,-447330",
+                "4999700,-442330",
+                "5016700,-442330",
+                "5016700,-447330"
+            ],
+            "table": [
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "支撑"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "直撑及斜撑预加轴力值（KN）"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "直撑轴力设计值（KN）"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "斜撑轴力设计值（KN）"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "第一道（单根）"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "150"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "754.80（加宽段735.71）"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1067.28"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "第二道（单根）"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "300"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "3085.15（加宽段2364.11）"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "4362.40"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "第三道（单根）"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "250"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "3483.48（加宽段2968.95）"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "4925.63"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "第四道（单根）"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "0"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "2765.14（加宽段2467.70）"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "3909.91"
+                            ],
+                            "table": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "bounding": [
+                "5070781,-430240",
+                "5070781,-420259",
+                "5078081,-420259",
+                "5078081,-430240"
+            ],
+            "table": [
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "中",
+                                "国",
+                                "铁",
+                                "建",
+                                "中铁第五勘察设计院集团有限公司",
+                                "CHINA RAILWAY FIFTH SURVEY AND DESIGN GROUP CO.,LTD."
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "本图纸版权属中铁第五勘察设计院集团有限公司所有，",
+                                "未经授权，不得复制。（本公司与客户另有约定的，从其约",
+                                "定）",
+                                "The copyright of this drawing is reserved by CHINA RAILWAY FIFTH SURVEY",
+                                "AND DESIGN GROUP CO.,LTD.No one can reproduce without authorization ."
+                            ],
+                            "table": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "bounding": [
+                "5071081,-448660",
+                "5071081,-430609",
+                "5077781,-430609",
+                "5077781,-448660"
+            ],
+            "table": [
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "项目负责人",
+                                "PROJECT MANAGER"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "项目负责人",
+                                "PROJECT MANAGER"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "李长安"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "李长安"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "设计签字",
+                                "SIGNATURE"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "设计签字",
+                                "SIGNATURE"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "设计签字",
+                                "SIGNATURE"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "设计签字",
+                                "SIGNATURE"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "专业负责人",
+                                "DIVISION CHIEF"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "单  伟"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "设计人",
+                                "DESIGNED BY"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "李长安"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "验证签字",
+                                "VERIFICATION"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "验证签字",
+                                "VERIFICATION"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "验证签字",
+                                "VERIFICATION"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "验证签字",
+                                "VERIFICATION"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "校  核",
+                                "CHECKED BY"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "刘雪斌"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "审  核",
+                                "VERIFIED BY"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "张  伟"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "院  审",
+                                "APPROVED BY"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "吴林林"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "会  签",
+                                "CONFIRMATION"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "会  签",
+                                "CONFIRMATION"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "会  签",
+                                "CONFIRMATION"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "会  签",
+                                "CONFIRMATION"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "总体审定",
+                                "GENERAL APPROVAL"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "总体审定",
+                                "GENERAL APPROVAL"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "系统审定",
+                                "SYSTEMATIC APPROVAL"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "系统审定",
+                                "SYSTEMATIC APPROVAL"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "会签专业",
+                                "CONFIRMATION"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "签名",
+                                "NAME"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "会签专业",
+                                "CONFIRMATION"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "签名",
+                                "NAME"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "项目名称",
+                                "PROJECT NAME",
+                                "北京轨道交通新机场线一期工程"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "项目名称",
+                                "PROJECT NAME",
+                                "北京轨道交通新机场线一期工程"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "项目名称",
+                                "PROJECT NAME",
+                                "北京轨道交通新机场线一期工程"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "项目名称",
+                                "PROJECT NAME",
+                                "北京轨道交通新机场线一期工程"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "工程号",
+                                "PROJECT NO.",
+                                "2015DT01"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "工程号",
+                                "PROJECT NO.",
+                                "2015DT01"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "工程号",
+                                "PROJECT NO.",
+                                "2015DT01"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "工程号",
+                                "PROJECT NO.",
+                                "2015DT01"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图册名称",
+                                "ALBUM NAME",
+                                "磁各庄站",
+                                "车站结构",
+                                "车站主体支护结构"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图册名称",
+                                "ALBUM NAME",
+                                "磁各庄站",
+                                "车站结构",
+                                "车站主体支护结构"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图册名称",
+                                "ALBUM NAME",
+                                "磁各庄站",
+                                "车站结构",
+                                "车站主体支护结构"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图册名称",
+                                "ALBUM NAME",
+                                "磁各庄站",
+                                "车站结构",
+                                "车站主体支护结构"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图名",
+                                "DRAWING NAME",
+                                "围护结构3-3、4-4、5-5剖面图"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图名",
+                                "DRAWING NAME",
+                                "围护结构3-3、4-4、5-5剖面图"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图名",
+                                "DRAWING NAME",
+                                "围护结构3-3、4-4、5-5剖面图"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图名",
+                                "DRAWING NAME",
+                                "围护结构3-3、4-4、5-5剖面图"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图号",
+                                "SHEET NO.",
+                                "BJXJC-SS-302-02-01-00-JG-011"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图号",
+                                "SHEET NO.",
+                                "BJXJC-SS-302-02-01-00-JG-011"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图号",
+                                "SHEET NO.",
+                                "BJXJC-SS-302-02-01-00-JG-011"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "图号",
+                                "SHEET NO.",
+                                "BJXJC-SS-302-02-01-00-JG-011"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "设计阶段",
+                                "PHASE",
+                                "施工设计"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "设计阶段",
+                                "PHASE",
+                                "施工设计"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "出图日期",
+                                "DATE",
+                                "2017年03月"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "出图日期",
+                                "DATE",
+                                "2017年03月"
+                            ],
+                            "table": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

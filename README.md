@@ -26,6 +26,7 @@ warning_type={
     413: '缺少钢支撑轴力值表格(enclosureStructureCrossSection)提取结果'
     414: '缺少基坑施工监测频率表'
     415: '基坑施工监测频率表错误'
+    416：'缺少部分CAD(extractions)提取结果'
 }
 
 # 错误类型

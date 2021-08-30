@@ -97,10 +97,18 @@ def main_check(path_target=None, checkId=-1):
     # 对照目录判断缺少文件
     checkFiles=set(list_of_content.values())
     print('###############################################')
-    print(checkFiles)
-    print(data_CAD.keys())
-    print(data_CAD['constructionSteps'].keys())
-    checkFiles.discard(data_CAD['constructionSteps'].keys())
+    #print(checkFiles)
+    #print(data_CAD.keys())
+    #print(data_CAD['constructionSteps'].keys())
+    for dirname in data_CAD.keys():
+        for file_in_dir in data_CAD[dirname].keys():
+            checkFiles.discard(file_in_dir)
+
+    #checkFiles.discard(str(data_CAD['constructionSteps'].keys()))
+    print('未检测到以下图纸：'+str(checkFiles))
+    error_ = {'file': 'extractions', 'errorCode': 416, 'errorTitle': '缺少部分CAD(extractions)提取结果', 'path': str(checkFiles)}
+    log_error(error_, errors)
+    all_errors.extend(errors)
 
     #for filenames_of_cad in data_CAD
 

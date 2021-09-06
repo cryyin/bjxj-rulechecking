@@ -219,6 +219,12 @@ def rule_4_3(data_CAD, data_calc):
                 sec_name = re.search(r'\d-\d', content['title']).group(0)
                 embed_depth_CAD[sec_name] = content['embedment_depth']
                 bounding[sec_name] = content['bounding']
+            else:
+                error_ = {'file': filename, 'errorCode': 2014, 'errorTitle': 'CAD图纸中缺少嵌固深度',
+                          'errorMsg': "图纸{:s} 中缺少{:s} 的嵌固深度".format(filename, content['title']),
+                          'path': content['bounding']}
+                log_error(error_, errors)
+
 
     embed_depth_calc = {}  # 计算书中的嵌固深度
     if '嵌固深度' in data_calc and data_calc['嵌固深度']:
@@ -603,6 +609,7 @@ def rule_8_2(data_CAD, list_of_content=None):
             # except IndexError:
             #     error_ = {'errorCode': 414, 'errorTitle': '基坑施工监测频率表错误', 'errorMsg': '缺少列表头 "＞20"', 'path': []}
             #     log_error(error_, errors)
+
             if row0[1]['category'] == 'TABLE':
                 row_level2 = row0[1]['table'][1]['row'][0]['table'][0]['row']
                 for col_level2 in row_level2:
@@ -623,6 +630,8 @@ def rule_8_2(data_CAD, list_of_content=None):
 
                 freq_CAD[row_title[row_id3]] = temp_dict
 
+
+    print(freq_CAD)
     if len(freq_CAD) == 0:
         error_ = {'errorCode': 414, 'errorTitle': '缺少基坑施工监测频率表', 'errorMsg': '缺少基坑施工监测频率表', 'path': []}
         log_error(error_, errors)

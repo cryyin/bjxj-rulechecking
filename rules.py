@@ -2,6 +2,7 @@
 # Regulation Checking
 from read_items import *
 from utils import *
+import numpy as np
 
 # 中文数字与阿拉伯数字的映射
 chinese2arabic = {'一': '1', '首': '1', '二': '2', '三': '3', '四': '4', '五': '5', '六': '6', '七': '7', '八': '8', '九': '9',
@@ -556,6 +557,8 @@ def rule_8_2(data_CAD, list_of_content=None):
     count_1 = -1
     for table in tableGroup:
         boundings.append(table['bounding'])
+
+    '''
     for table in tableGroup:
         count_1 = count_1 + 1
         if len(table['table']) < 2:
@@ -565,7 +568,11 @@ def rule_8_2(data_CAD, list_of_content=None):
         else:
             continue
 
+
         if row0[0]['category'] == 'TEXT' and ''.join(row0[0]['data']) == '施工工况':  # 基于 '施工工况' 确定表格
+            tabledict=dict()
+            tabledict.keys()
+            
             # # 审核表格完整性
             # try:
             #     if row0[1]['table'][0]['row'][0]['data'][0] != '基坑设计深度（m）':
@@ -629,6 +636,29 @@ def rule_8_2(data_CAD, list_of_content=None):
                     temp_dict[col_title[col_id4]] = ''.join(col_level4['data'])
 
                 freq_CAD[row_title[row_id3]] = temp_dict
+                '''
+    for table in tableGroup:
+        count_1 = count_1 + 1
+        if len(table['table']) < 2:
+            continue
+        if 'row' in table['table'][0]:
+            row0 = table['table'][0]['row']
+        else:
+            continue
+
+
+        if row0[0]['category'] == 'TEXT' and ''.join(row0[0]['data']) == '施工工况':  # 基于 '施工工况' 确定表格
+            tableArray = list()
+
+            for rowInTable in table['table']:
+                print(len(rowInTable['row']))
+                for tableData in rowInTable['row']:
+                    print(str(tableData['data']))
+                    tableArray.append(str(tableData['data']))
+                #tablearray=np.array[len(rowInTable['row'])][len(table['table'])]
+            tableArray = np.reshape(tableArray, (len(rowInTable['row']), len(table['table'])))
+            print(tableArray)
+
 
 
     print(freq_CAD)

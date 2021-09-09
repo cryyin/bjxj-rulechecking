@@ -1,5 +1,8 @@
 # Author: Chuang Zhang, Datetime: 2021-02-08
 # Regulation Checking
+import pandas
+import pandas as pd
+
 from read_items import *
 from utils import *
 import numpy as np
@@ -570,8 +573,7 @@ def rule_8_2(data_CAD, list_of_content=None):
 
 
         if row0[0]['category'] == 'TEXT' and ''.join(row0[0]['data']) == '施工工况':  # 基于 '施工工况' 确定表格
-            tabledict=dict()
-            tabledict.keys()
+
             
             # # 审核表格完整性
             # try:
@@ -637,6 +639,7 @@ def rule_8_2(data_CAD, list_of_content=None):
 
                 freq_CAD[row_title[row_id3]] = temp_dict
                 '''
+
     for table in tableGroup:
         count_1 = count_1 + 1
         if len(table['table']) < 2:
@@ -649,19 +652,35 @@ def rule_8_2(data_CAD, list_of_content=None):
 
         if row0[0]['category'] == 'TEXT' and ''.join(row0[0]['data']) == '施工工况':  # 基于 '施工工况' 确定表格
             tableArray = list()
-
+            tempdata = list()
+            full_data_flag=0
+            full_data = ''
             for rowInTable in table['table']:
                 print(len(rowInTable['row']))
                 for tableData in rowInTable['row']:
                     print(str(tableData['data']))
-                    tableArray.append(str(tableData['data']))
+                    if len(tableData['data'])>1:
+                        for tableData_array in tableData['data']:
+                            full_data+=tableData_array
+                            full_data_flag=1
+                    if full_data_flag:
+                        tempdata.append(full_data)
+                        full_data=''
+                        full_data_flag=0
+                    else:
+                        tempdata.extend(tableData['data'])
+                tableArray.append(tempdata)
+                tempdata=list()
+                    #tableArray.append(str(tableData['data']))
                 #tablearray=np.array[len(rowInTable['row'])][len(table['table'])]
-            tableArray = np.reshape(tableArray, (len(rowInTable['row']), len(table['table'])))
-            print(tableArray)
+            tableArray = np.reshape(tableArray, (len(table['table']),len(rowInTable['row'])))
+            df=pd.DataFrame(tableArray)
+            print(df)
 
 
 
-    print(freq_CAD)
+
+    print(tableArray)
     if len(freq_CAD) == 0:
         error_ = {'errorCode': 414, 'errorTitle': '缺少基坑施工监测频率表', 'errorMsg': '缺少基坑施工监测频率表', 'path': []}
         log_error(error_, errors)

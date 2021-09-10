@@ -678,7 +678,9 @@ def rule_8_2(data_CAD, list_of_content=None):
             freq_CAD.drop(freq_CAD.head(1).index,inplace=True)
             freq_CAD.drop(freq_CAD.tail(1).index,inplace=True)
             freq_CAD.drop(columns=0,inplace=True)
-            freq_CAD.columns.set_value()
+            new_header = freq_CAD.iloc[0]  # grab the first row for the header
+            freq_CAD = freq_CAD[1:]  # take the data less the header row
+            freq_CAD.columns = new_header  # set the header row as the df header
 
             print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
             print(freq_CAD)

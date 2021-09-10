@@ -656,14 +656,14 @@ def rule_8_2(data_CAD, list_of_content=None):
             full_data_flag=0
             full_data = ''
             for rowInTable in table['table']:
-                print(len(rowInTable['row']))
+                #print(len(rowInTable['row']))
                 for tableData in rowInTable['row']:
-                    print(str(tableData['data']))
-                    if len(tableData['data'])>1:
+                    #print(str(tableData['data']))
+                    if len(tableData['data'])>1:  #如果小智读取的一格数组里有多个项，进行拼接
                         for tableData_array in tableData['data']:
                             full_data+=tableData_array
                             full_data_flag=1
-                    if full_data_flag:
+                    if full_data_flag:  #如果是多个拼接，按object加入临时列表
                         tempdata.append(full_data)
                         full_data=''
                         full_data_flag=0
@@ -673,15 +673,24 @@ def rule_8_2(data_CAD, list_of_content=None):
                 tempdata=list()
                     #tableArray.append(str(tableData['data']))
                 #tablearray=np.array[len(rowInTable['row'])][len(table['table'])]
-            tableArray = np.reshape(tableArray, (len(table['table']),len(rowInTable['row'])))
-            df=pd.DataFrame(tableArray)
-            print(df)
+            tableArray = np.reshape(tableArray, (len(table['table']),len(rowInTable['row']))) #转成与图纸一样的表格
+            freq_CAD=pd.DataFrame(tableArray)  #将表格放入dataframe便于处理
+            freq_CAD.drop(freq_CAD.head(1).index,inplace=True)
+            freq_CAD.drop(freq_CAD.tail(1).index,inplace=True)
+            freq_CAD.drop(columns=0,inplace=True)
+            freq_CAD.columns.set_value()
+
+            print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+            print(freq_CAD)
+            print(freq_CAD.axes)
 
 
-
-
-    print(tableArray)
-    if len(freq_CAD) == 0:
+    freq_rule=pd.DataFrame(freq_rule)
+    freq_rule=freq_rule.T
+    print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+    print(freq_rule)
+    print(freq_CAD.axes)
+    if freq_CAD.empty:
         error_ = {'errorCode': 414, 'errorTitle': '缺少基坑施工监测频率表', 'errorMsg': '缺少基坑施工监测频率表', 'path': []}
         log_error(error_, errors)
     else:

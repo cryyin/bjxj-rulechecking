@@ -135,21 +135,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "1次/1d"
+                                "次/1d"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "1次/2d"
+                                "次/2d"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "1次/3d"
+                                "次/3d"
                             ],
                             "table": []
                         },

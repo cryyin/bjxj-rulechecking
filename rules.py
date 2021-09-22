@@ -675,12 +675,19 @@ def rule_8_2(data_CAD, list_of_content=None):
                 #tablearray=np.array[len(rowInTable['row'])][len(table['table'])]
             tableArray = np.reshape(tableArray, (len(table['table']),len(rowInTable['row']))) #转成与图纸一样的表格
             freq_CAD=pd.DataFrame(tableArray)  #将表格放入dataframe便于处理
+
+
             freq_CAD.drop(freq_CAD.head(1).index,inplace=True)
             freq_CAD.drop(freq_CAD.tail(1).index,inplace=True)
             freq_CAD.drop(columns=0,inplace=True)
+            #freq_CAD = freq_CAD.iloc[1:,1:1]
+            #print(freq_CAD)
             freq_CAD.index = freq_CAD.iloc[0].values
             new_header = freq_CAD.iloc[0]  # grab the first row for the header
+            #new_header = new_header.iloc[1:]
+            #print(new_header)
             freq_CAD = freq_CAD[1:]  # take the data less the header row
+            print(freq_CAD)
             freq_CAD.columns = new_header  # set the header row as the df header
             freq_CAD = freq_CAD.iloc[: , 1:]
             #new_index = freq_CAD.iloc[:,0]
@@ -695,10 +702,12 @@ def rule_8_2(data_CAD, list_of_content=None):
 
 
     freq_rule=pd.DataFrame(freq_rule)
+
     freq_rule=freq_rule.T
     print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
     print(freq_rule)
     print(freq_CAD.axes)
+    '''
     if freq_CAD.empty:
         error_ = {'errorCode': 414, 'errorTitle': '缺少基坑施工监测频率表', 'errorMsg': '缺少基坑施工监测频率表', 'path': []}
         log_error(error_, errors)
@@ -709,7 +718,26 @@ def rule_8_2(data_CAD, list_of_content=None):
                 if row_name in freq_rule and col_name in freq_rule[row_name]:
                     if re.search(r'\d', freq_CAD[row_name][col_name]) and re.search(r'\d', freq_rule[row_name][col_name]) and (freq_CAD[row_name][col_name] != freq_rule[row_name][col_name]):
                         error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符', 'errorMsg': "{:s} {:s} 的值 与规范不一致, 图纸中为：{:s}，规范中为：{:s}".format(row_name, col_name, freq_CAD[row_name][col_name], freq_rule[row_name][col_name]), 'path': boundings[count_1]}
-                        log_error(error_, errors)
+                        log_error(error_, errors)'''
+    if freq_CAD.empty:
+        error_ = {'errorCode': 414, 'errorTitle': '缺少基坑施工监测频率表', 'errorMsg': '缺少基坑施工监测频率表', 'path': []}
+        log_error(error_, errors)
+    else:
+        freq_CAD=np.array(freq_CAD)
+        freq_rule = np.array(freq_rule)
+        c = (freq_CAD == freq_rule)
+        if not c.all():
+            for idx in np.argwhere(c==0):
+                #print(idx)
+                #print(type(idx))
+                idx_x, idx_y = np.split(idx, 2)
+                #print(freq_CAD[int(idx_x)][int(idx_y)])
+                #print(freq_rule[int(idx_x)][int(idx_y)])
+                error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
+                          'errorMsg': "第{:s}行 第{:s}列 的值 与规范不一致, 图纸中为：{:s}，规范中为：{:s}".format(idx_x+1, idx_y+1,freq_CAD[int(idx_x)][int(idx_y)],freq_rule[int(idx_x)][int(idx_y)]),
+                          'path': boundings[count_1]}
+                log_error(error_, errors)
+
 
     count_2 = -1
     # 判断测斜仪精度符不符合要求

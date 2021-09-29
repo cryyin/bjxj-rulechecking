@@ -729,12 +729,12 @@ def rule_8_2(data_CAD, list_of_content=None):
         if not c.all():
             for idx in np.argwhere(c==0):
                 #print(idx)
-                #print(type(idx))
+                print(type(idx))
                 idx_x, idx_y = np.split(idx, 2)
-                #print(freq_CAD[int(idx_x)][int(idx_y)])
-                #print(freq_rule[int(idx_x)][int(idx_y)])
+                #print(type(freq_CAD[int(idx_x)][int(idx_y)]))
+                #print(type(freq_rule[int(idx_x)][int(idx_y)]))
                 error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
-                          'errorMsg': "第{:s}行 第{:s}列 的值 与规范不一致, 图纸中为：{:s}，规范中为：{:s}".format(idx_x+1, idx_y+1,freq_CAD[int(idx_x)][int(idx_y)],freq_rule[int(idx_x)][int(idx_y)]),
+                          'errorMsg': "第{:s}行 第{:s}列 的值 与规范不一致, 图纸中为：{:s}，规范中为：{:s}".format(np.array2string(idx_x[0] + 1), np.array2string(idx_y[0] + 1),freq_CAD[int(idx_x)][int(idx_y)],freq_rule[int(idx_x)][int(idx_y)]),
                           'path': boundings[count_1]}
                 log_error(error_, errors)
 

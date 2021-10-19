@@ -426,7 +426,7 @@ def rule_6(data_CAD):
 
         if not flag_anti_fall:
             for file, content in data_internal.items():
-                error_ = {'file': file, 'errorCode': 2010, 'errorTitle': '图纸中缺少必要信息(防脱落措施)', 'path': []}
+                error_ = {'file': file, 'errorCode': 2010, 'errorTitle': '钢支撑防脱落措施应采用上拉下托方式', 'path': []} #图纸中缺少必要信息(防脱落措施)
                 log_error(error_, errors)
 
         if not flag_flange:

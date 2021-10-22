@@ -69,7 +69,7 @@ def rule_3_3(data_CAD, data_calc):
                     #print(pile['name']+' got a Standard')
             #print('缺少标注钻孔名称：')
             #print(nameHadNoStandard_set)
-            error_ = {'file': filename, 'errorCode': 2013, 'errorTitle': '图纸中缺少必要信息(钻孔灌注桩标注)',
+            error_ = {'file': filename, 'errorCode': 417, 'errorTitle': '图纸中缺少必要信息(钻孔灌注桩标注)',
                                         'errorMsg': '桩{:s}缺少标注信息，请检查直径和间距信息'.format(','.join(nameHadNoStandard_set)),
                                         'path': pile['bounding']}
             log_error(error_, errors)
@@ -94,7 +94,7 @@ def rule_3_3(data_CAD, data_calc):
             # 桩间距判断，桩间净距宜为 150mm～1000mm
             # 保留最近的桩径，以防当前的柱没有提取到桩径
             if prev_diameter == 0:  # 没有提取到桩径信息
-                error_ = {'file': filename, 'errorCode': 2008, 'errorTitle': '图纸中缺少必要信息(桩径)', 'path': []}
+                error_ = {'file': filename, 'errorCode': 416, 'errorTitle': '图纸中缺少必要信息(桩径)', 'path': []}
                 log_error(error_, errors)
             else:  # 有桩径信息，才去判断桩间净距
                 for pile in content['pile']:
@@ -226,7 +226,7 @@ def rule_4_3(data_CAD, data_calc):
                 embed_depth_CAD[sec_name] = content['embedment_depth']
                 bounding[sec_name] = content['bounding']
             else:
-                error_ = {'file': filename, 'errorCode': 2014, 'errorTitle': 'CAD图纸中缺少嵌固深度',
+                error_ = {'file': filename, 'errorCode': 418, 'errorTitle': 'CAD图纸中缺少嵌固深度',
                           'errorMsg': "图纸{:s} 中缺少{:s} 的嵌固深度".format(filename, content['title']),
                           'path': content['bounding']}
                 log_error(error_, errors)
@@ -583,42 +583,42 @@ def rule_8_2(data_CAD, list_of_content=None):
             #         error_ = {'errorCode': 415, 'errorTitle': '基坑施工监测频率表错误', 'errorMsg': '列表头 "基坑设计深度（m）" 位置错误', 'path': []}
             #         log_error(error_, errors)
             # except IndexError:
-            #     error_ = {'errorCode': 2015, 'errorTitle': '基坑施工监测频率表错误', 'errorMsg': '缺少列表头 "基坑设计深度（m）"', 'path': []}
+            #     error_ = {'errorCode': 419, 'errorTitle': '基坑施工监测频率表错误', 'errorMsg': '缺少列表头 "基坑设计深度（m）"', 'path': []}
             #     log_error(error_, errors)
             # try:
             #     if row0[1]['table'][1]['row'][0]['table'][0]['row'][0]['data'][0] != '≤5':
             #         error_ = {'errorCode': 415, 'errorTitle': '基坑施工监测频率表错误', 'errorMsg': '列表头 "≤5" 位置错误', 'path': []}
             #         log_error(error_, errors)
             # except IndexError:
-            #     error_ = {'errorCode': 2015, 'errorTitle': '基坑施工监测频率表错误', 'errorMsg': '缺少列表头 "≤5"', 'path': []}
+            #     error_ = {'errorCode': 419, 'errorTitle': '基坑施工监测频率表错误', 'errorMsg': '缺少列表头 "≤5"', 'path': []}
             #     log_error(error_, errors)
             # try:
             #     if row0[1]['table'][1]['row'][0]['table'][0]['row'][1]['data'][0] != '5~10':
             #         error_ = {'errorCode': 415, 'errorTitle': '基坑施工监测频率表错误', 'errorMsg': '列表头 "5~10" 位置错误', 'path': []}
             #         log_error(error_, errors)
             # except IndexError:
-            #     error_ = {'errorCode': 2015, 'errorTitle': '基坑施工监测频率表错误', 'errorMsg': '缺少列表头 "5~10"', 'path': []}
+            #     error_ = {'errorCode': 419, 'errorTitle': '基坑施工监测频率表错误', 'errorMsg': '缺少列表头 "5~10"', 'path': []}
             #     log_error(error_, errors)
             # try:
             #     if row0[1]['table'][1]['row'][0]['table'][0]['row'][2]['data'][0] != '10~15':
             #         error_ = {'errorCode': 415, 'errorTitle': '基坑施工监测频率表错误', 'errorMsg': '列表头 "10~15" 位置错误', 'path': []}
             #         log_error(error_, errors)
             # except IndexError:
-            #     error_ = {'errorCode': 2015, 'errorTitle': '基坑施工监测频率表错误', 'errorMsg': '缺少列表头 "10~15"', 'path': []}
+            #     error_ = {'errorCode': 419, 'errorTitle': '基坑施工监测频率表错误', 'errorMsg': '缺少列表头 "10~15"', 'path': []}
             #     log_error(error_, errors)
             # try:
             #     if row0[1]['table'][1]['row'][0]['table'][0]['row'][3]['data'][0] != '15~20':
             #         error_ = {'errorCode': 415, 'errorTitle': '基坑施工监测频率表错误', 'errorMsg': '列表头 "15~20" 位置错误', 'path': []}
             #         log_error(error_, errors)
             # except IndexError:
-            #     error_ = {'errorCode': 2015, 'errorTitle': '基坑施工监测频率表错误', 'errorMsg': '缺少列表头 "15~20"', 'path': []}
+            #     error_ = {'errorCode': 419, 'errorTitle': '基坑施工监测频率表错误', 'errorMsg': '缺少列表头 "15~20"', 'path': []}
             #     log_error(error_, errors)
             # try:
             #     if row0[1]['table'][1]['row'][0]['table'][0]['row'][4]['data'][0] != '＞20':
             #         error_ = {'errorCode': 415, 'errorTitle': '基坑施工监测频率表错误', 'errorMsg': '列表头 "＞20" 位置错误', 'path': []}
             #         log_error(error_, errors)
             # except IndexError:
-            #     error_ = {'errorCode': 2015, 'errorTitle': '基坑施工监测频率表错误', 'errorMsg': '缺少列表头 "＞20"', 'path': []}
+            #     error_ = {'errorCode': 419, 'errorTitle': '基坑施工监测频率表错误', 'errorMsg': '缺少列表头 "＞20"', 'path': []}
             #     log_error(error_, errors)
 
             if row0[1]['category'] == 'TABLE':
@@ -713,7 +713,7 @@ def rule_8_2(data_CAD, list_of_content=None):
             print(freq_CAD.axes)
             '''
             if freq_CAD.empty:
-                error_ = {'errorCode': 2015, 'errorTitle': '缺少基坑施工监测频率表', 'errorMsg': '缺少基坑施工监测频率表', 'path': []}
+                error_ = {'errorCode': 419, 'errorTitle': '缺少基坑施工监测频率表', 'errorMsg': '缺少基坑施工监测频率表', 'path': []}
                 log_error(error_, errors)
             else:
                 # compare freq_CAD with freq_rule
@@ -724,7 +724,7 @@ def rule_8_2(data_CAD, list_of_content=None):
                                 error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符', 'errorMsg': "{:s} {:s} 的值 与规范不一致, 图纸中为：{:s}，规范中为：{:s}".format(row_name, col_name, freq_CAD[row_name][col_name], freq_rule[row_name][col_name]), 'path': boundings[count_1]}
                                 log_error(error_, errors)'''
             if freq_CAD.empty:
-                error_ = {'errorCode': 2015, 'errorTitle': '缺少基坑施工监测频率表', 'errorMsg': '缺少基坑施工监测频率表', 'path': []}
+                error_ = {'errorCode': 419, 'errorTitle': '缺少基坑施工监测频率表', 'errorMsg': '缺少基坑施工监测频率表', 'path': []}
                 log_error(error_, errors)
             else:
                 freq_CAD = np.array(freq_CAD)
@@ -858,15 +858,15 @@ def rule_8_2(data_CAD, list_of_content=None):
                                           'path': mark['bounding']}
                                 log_error(error_, errors)
                         else:
-                            error_ = {'file': filename, 'errorCode': 2007, 'errorTitle': '缺少标注监测点的竖向布置间距',
+                            error_ = {'file': filename, 'errorCode': 415, 'errorTitle': '缺少标注监测点的竖向布置间距',
                                       'errorMsg': "缺少标注监测点的竖向布置间距", 'path': []}
                             log_error(error_, errors)
                 else:
-                    error_ = {'file': filename, 'errorCode': 2007, 'errorTitle': '缺少标注监测点的竖向布置间距',
+                    error_ = {'file': filename, 'errorCode': 415, 'errorTitle': '缺少标注监测点的竖向布置间距',
                               'errorMsg': "缺少标注监测点的竖向布置间距", 'path': []}
                     log_error(error_, errors)
             else:
-                error_ = {'file': filename, 'errorCode': 2007, 'errorTitle': '缺少标注监测点的竖向布置间距',
+                error_ = {'file': filename, 'errorCode': 415, 'errorTitle': '缺少标注监测点的竖向布置间距',
                           'errorMsg': "缺少标注监测点的竖向布置间距", 'path': []}
                 log_error(error_, errors)
     else:

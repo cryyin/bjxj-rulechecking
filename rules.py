@@ -1,5 +1,7 @@
-# Author: Chuang Zhang, Datetime: 2021-02-08
+# Author: shen chunyuan, Datetime: 2021-10-22
 # Regulation Checking
+import re
+
 import pandas
 import pandas as pd
 
@@ -426,7 +428,7 @@ def rule_6(data_CAD):
 
         if not flag_anti_fall:
             for file, content in data_internal.items():
-                error_ = {'file': file, 'errorCode': 2010, 'errorTitle': '钢支撑防脱落措施应采用上拉下托方式', 'path': []} #图纸中缺少必要信息(防脱落措施)
+                error_ = {'file': file, 'errorCode': 2010, 'errorTitle': '钢支撑未见防脱落措施', 'path': []} #图纸中缺少必要信息(防脱落措施)
                 log_error(error_, errors)
 
         if not flag_flange:
@@ -649,6 +651,7 @@ def rule_8_2(data_CAD, list_of_content=None):
         else:
             continue
 
+        print('table'+str(count_1))
 
         if row0[0]['category'] == 'TEXT' and ''.join(row0[0]['data']) == '施工工况':  # 基于 '施工工况' 确定表格
             tableArray = list()
@@ -663,6 +666,9 @@ def rule_8_2(data_CAD, list_of_content=None):
                         for tableData_array in tableData['data']:
                             full_data+=tableData_array
                             full_data_flag=1
+                    elif len(tableData['data'])<1:
+                        tempdata.append('--')
+                        continue
                     if full_data_flag:  #如果是多个拼接，按object加入临时列表
                         tempdata.append(full_data)
                         full_data=''
@@ -699,44 +705,101 @@ def rule_8_2(data_CAD, list_of_content=None):
             print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
             print(freq_CAD)
             print(freq_CAD.axes)
+            freq_rule = pd.DataFrame(freq_rule)
+
+            freq_rule = freq_rule.T
+            print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+            print(freq_rule)
+            print(freq_CAD.axes)
+            '''
+            if freq_CAD.empty:
+                error_ = {'errorCode': 414, 'errorTitle': '缺少基坑施工监测频率表', 'errorMsg': '缺少基坑施工监测频率表', 'path': []}
+                log_error(error_, errors)
+            else:
+                # compare freq_CAD with freq_rule
+                for row_name, row_value in freq_CAD.items():
+                    for col_name, col_value in row_value.items():
+                        if row_name in freq_rule and col_name in freq_rule[row_name]:
+                            if re.search(r'\d', freq_CAD[row_name][col_name]) and re.search(r'\d', freq_rule[row_name][col_name]) and (freq_CAD[row_name][col_name] != freq_rule[row_name][col_name]):
+                                error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符', 'errorMsg': "{:s} {:s} 的值 与规范不一致, 图纸中为：{:s}，规范中为：{:s}".format(row_name, col_name, freq_CAD[row_name][col_name], freq_rule[row_name][col_name]), 'path': boundings[count_1]}
+                                log_error(error_, errors)'''
+            if freq_CAD.empty:
+                error_ = {'errorCode': 414, 'errorTitle': '缺少基坑施工监测频率表', 'errorMsg': '缺少基坑施工监测频率表', 'path': []}
+                log_error(error_, errors)
+            else:
+                freq_CAD = np.array(freq_CAD)
+                freq_rule = np.array(freq_rule)
+                c = (freq_CAD == freq_rule)
+                if not c.all():
+                    for idx in np.argwhere(c == 0):
+                        # print(idx)
+                        print(type(idx))
+                        idx_x, idx_y = np.split(idx, 2)
+                        # print(type(freq_CAD[int(idx_x)][int(idx_y)]))
+                        # print(type(freq_rule[int(idx_x)][int(idx_y)]))
+                        error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
+                                  'errorMsg': "第{:s}行 第{:s}列 的值 与规范不一致, 图纸中为：{:s}，规范中为：{:s}".format(
+                                      np.array2string(idx_x[0] + 1), np.array2string(idx_y[0] + 1),
+                                      freq_CAD[int(idx_x)][int(idx_y)], freq_rule[int(idx_x)][int(idx_y)]),
+                                  'path': boundings[count_1]}
+                        log_error(error_, errors)
 
 
-    freq_rule=pd.DataFrame(freq_rule)
 
-    freq_rule=freq_rule.T
-    print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
-    print(freq_rule)
-    print(freq_CAD.axes)
-    '''
-    if freq_CAD.empty:
-        error_ = {'errorCode': 414, 'errorTitle': '缺少基坑施工监测频率表', 'errorMsg': '缺少基坑施工监测频率表', 'path': []}
-        log_error(error_, errors)
-    else:
-        # compare freq_CAD with freq_rule
-        for row_name, row_value in freq_CAD.items():
-            for col_name, col_value in row_value.items():
-                if row_name in freq_rule and col_name in freq_rule[row_name]:
-                    if re.search(r'\d', freq_CAD[row_name][col_name]) and re.search(r'\d', freq_rule[row_name][col_name]) and (freq_CAD[row_name][col_name] != freq_rule[row_name][col_name]):
-                        error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符', 'errorMsg': "{:s} {:s} 的值 与规范不一致, 图纸中为：{:s}，规范中为：{:s}".format(row_name, col_name, freq_CAD[row_name][col_name], freq_rule[row_name][col_name]), 'path': boundings[count_1]}
-                        log_error(error_, errors)'''
-    if freq_CAD.empty:
-        error_ = {'errorCode': 414, 'errorTitle': '缺少基坑施工监测频率表', 'errorMsg': '缺少基坑施工监测频率表', 'path': []}
-        log_error(error_, errors)
-    else:
-        freq_CAD=np.array(freq_CAD)
-        freq_rule = np.array(freq_rule)
-        c = (freq_CAD == freq_rule)
-        if not c.all():
-            for idx in np.argwhere(c==0):
-                #print(idx)
-                print(type(idx))
-                idx_x, idx_y = np.split(idx, 2)
-                #print(type(freq_CAD[int(idx_x)][int(idx_y)]))
-                #print(type(freq_rule[int(idx_x)][int(idx_y)]))
+        # 明挖监控量测表
+        if row0[0]['category'] == 'TEXT' and ''.join(row0[0]['data']) == '序号':
+            tableArray = list()
+            tempdata = list()
+            full_data_flag = 0
+            full_data = ''
+            for rowInTable in table['table']:
+                # print(len(rowInTable['row']))
+                for tableData in rowInTable['row']:
+                    # print(str(tableData['data']))
+                    if len(tableData['data']) > 1:  # 如果小智读取的一格数组里有多个项，进行拼接
+                        for tableData_array in tableData['data']:
+                            full_data += tableData_array
+                            full_data_flag = 1
+                    elif len(tableData['data'])<1:
+                        tempdata.append('--')
+                        continue
+                    if full_data_flag:  # 如果是多个拼接，按object加入临时列表
+                        tempdata.append(full_data)
+                        full_data = ''
+                        full_data_flag = 0
+                    else:
+                        tempdata.extend(tableData['data'])
+                tableArray.append(tempdata)
+                tempdata = list()
+                # tableArray.append(str(tableData['data']))
+                # tablearray=np.array[len(rowInTable['row'])][len(table['table'])]
+            tableArray = np.reshape(tableArray, (len(table['table']), len(rowInTable['row'])))  # 转成与图纸一样的表格
+            print(np.argwhere(tableArray == '地表沉降'))
+            idx_Landsubsidence_x, idx_Landsubsidence_y = np.argwhere(tableArray == '地表沉降')[0]
+            idx_ControlStandard_x,idx_ControlStandard_y = np.argwhere(tableArray == '变形控制标准')[0]
+            #print(tableArray[idx_Landsubsidence_x,idx_ControlStandard_y])
+            print(int(re.match("(\d\d)mm",tableArray[idx_Landsubsidence_x,idx_ControlStandard_y]).group(1)))
+            if(int(re.match("(\d\d)mm",tableArray[idx_Landsubsidence_x,idx_ControlStandard_y]).group(1))>30
+                    or int(re.match("(\d\d)mm",tableArray[idx_Landsubsidence_x,idx_ControlStandard_y]).group(1))<20):
                 error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
-                          'errorMsg': "第{:s}行 第{:s}列 的值 与规范不一致, 图纸中为：{:s}，规范中为：{:s}".format(np.array2string(idx_x[0] + 1), np.array2string(idx_y[0] + 1),freq_CAD[int(idx_x)][int(idx_y)],freq_rule[int(idx_x)][int(idx_y)]),
+                          'errorMsg': "地表沉降变形控制标准与规范不一致, 图纸中为：{:s}，应>=20且<=30".format(
+                              re.match("(\d\d)mm",tableArray[idx_Landsubsidence_x,idx_ControlStandard_y]).group(1)),
                           'path': boundings[count_1]}
                 log_error(error_, errors)
+            '''freq_rule = np.array([
+                                    ['序号','监测项目','监测仪器及元件','测点布置','监测精度','变形控制标准','监测频率'],
+                                    ['1','基坑及其周围环境观察','--','对开挖后的工程地质及水文地质的观察记录（地层、节理裂隙形态及充填性、含水情况等）;支护裂隙和支护状态的观察描述;邻近建（构）筑物及地面的变形、裂缝等的观察描述。','--','--','全过程，1次/天，情况异常时加密监测频率。'],
+                                    ['2','地表沉降','水准仪','平面布置见监控量测平面图，纵向每20m左右一个监测断面，基坑每侧2个监测点;主监测断面80m一个，基坑每侧4个监测点;','%%P0.3mm','30mm,变化速率2mm/d','详见本图《基坑施工监测频率表》 '],
+                                    ['3','桩顶竖向位移','水准仪','横向布置如图，纵向每20m左右一监测断面。','%%P0.3mm','10mm,变化速率1mm/d', '详见本图《基坑施工监测频率表》 '],
+                                    ['4','桩顶水平位移','经纬仪或全站仪','横向布置如图，纵向每20m左右一监测断面。','%%P0.3mm', '10mm,变化速率2mm/d','详见本图《基坑施工监测频率表》 '],
+                                    ['5','桩体水平位移','测斜仪','横向布置如图，纵向每40m左右一监测断面。沿桩竖直方向上间距为1m，监测总深度为桩长。','0.02mm/0.5m','30mm,变化速率2mm/d','详见本图《基坑施工监测频率表》 '],
+                                    ['6','支撑轴力','应变计、轴力计、频率接收仪','横向布置如图，纵向每40m左右一监测断面。','0.15%%%F.s', '详见钢支撑轴力表','详见本图《基坑施工监测频率表》 '],
+                                    ['7','地下水位','电测水位计、PVC管','横向布置如图，纵向每40m左右一监测断面。','5.0mm','基坑底以下1m，0.5m/d', '1次/（1~2）天']
+                                ])'''
+
+
+
+
 
 
     count_2 = -1
@@ -793,6 +856,11 @@ def rule_8_2(data_CAD, list_of_content=None):
         error_ = {'file': '', 'errorCode': 412, 'errorTitle': '缺少监控量测图(monitoringMeasurementSection)提取结果',
                   'path': []}
         log_error(error_, errors)
+
+
+
+
+
     print("8.2 监控剖面图检查完毕。\n")
     return errors
 

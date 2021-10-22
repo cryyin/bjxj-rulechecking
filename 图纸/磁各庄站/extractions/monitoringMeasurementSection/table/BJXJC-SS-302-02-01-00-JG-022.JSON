@@ -603,7 +603,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "35mm,变化速率2mm/d"
+                                "30mm,变化速率2mm/d"
                             ],
                             "table": []
                         },
@@ -656,7 +656,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "15mm,变化速率1mm/d"
+                                "10mm,变化速率1mm/d"
                             ],
                             "table": []
                         },

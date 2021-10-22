@@ -106,7 +106,7 @@ def main_check(path_target=None, checkId=-1):
 
     #checkFiles.discard(str(data_CAD['constructionSteps'].keys()))
     print('未检测到以下图纸：'+str(checkFiles))
-    error_ = {'file': 'extractions', 'errorCode': 416, 'errorTitle': '缺少部分CAD(extractions)提取结果', 'path': str(checkFiles)}
+    error_ = {'file': 'extractions', 'errorCode': 414, 'errorTitle': '缺少部分CAD(extractions)提取结果', 'path': str(checkFiles)}
     log_error(error_, errors)
     all_errors.extend(errors)
 

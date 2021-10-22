@@ -24,9 +24,7 @@ warning_type={
     411: '缺少监控量测图(monitoringMeasurementLayoutPlan)提取结果',
     412: '缺少监控量测图(monitoringMeasurementSection)提取结果',
     413: '缺少钢支撑轴力值表格(enclosureStructureCrossSection)提取结果'
-    414: '缺少基坑施工监测频率表'
-    415: '基坑施工监测频率表错误'
-    416：'缺少部分CAD(extractions)提取结果'
+    414：'缺少部分CAD(extractions)提取结果'
 }
 
 # 错误类型
@@ -47,6 +45,7 @@ error_type={
     2012: '监测点的竖向布置间距不符合要求'
     2013: '图纸中缺少必要信息(钻孔灌注桩标注)'
     2014：'CAD图纸中缺少嵌固深度'
+    2015: '缺少基坑施工监测频率表'
     3001: '补充必要的验算',
     3002: '图纸与计算书信息不符',
 }

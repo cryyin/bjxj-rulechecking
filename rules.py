@@ -423,7 +423,7 @@ def rule_6(data_CAD):
                 flag_flange = True
         if not flag_shear:
             for file, content in data_internal.items():
-                error_ = {'file': file, 'errorCode': 2009, 'errorTitle': '图纸中缺少必要信息(肋板、抗剪措施)', 'path': []}
+                error_ = {'file': file, 'errorCode': 2009, 'errorTitle': '图纸中缺少肋板、抗剪措施', 'path': []}
                 log_error(error_, errors)
 
         if not flag_anti_fall:
@@ -433,7 +433,7 @@ def rule_6(data_CAD):
 
         if not flag_flange:
             for file, content in data_internal.items():
-                error_ = {'file': file, 'errorCode': 2011, 'errorTitle': '图纸中缺少必要信息(法兰盘)', 'path': []}
+                error_ = {'file': file, 'errorCode': 2011, 'errorTitle': '图纸中缺少法兰盘', 'path': []}
                 log_error(error_, errors)
     else:
         error_ = {'file': '', 'errorCode': 409, 'errorTitle': '缺少内支撑详图(enclosureStructureDetailDrawing)提取结果',

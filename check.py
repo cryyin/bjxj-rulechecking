@@ -2,6 +2,7 @@
 from rules import *
 from read_items import *
 from utils import *
+import configparser
 import pandas as pd
 
 
@@ -10,11 +11,17 @@ def main_check(path_target=None, checkId=-1):
     path_current = os.getcwd()
     # path_target为系统的绝对路径
     report = {}  # 最终反馈的报告
-    path_target = os.path.join(path_current, "图纸/磁各庄站")
-    # path_target = os.path.join(path_current, "图纸/积水潭站")
-    # path_target = os.path.join(path_current, "图纸/金安桥站")
-    # path_target = os.path.join(path_current, "图纸/西洼地站")
-    # path_target = os.path.join(path_current, "图纸/测试")
+
+    conf = configparser.ConfigParser()
+    conf.read(path_current + '/app.conf')  # 文件路径
+    path_target_flag = conf.get("env", "state")  # 获取指定section 的option值
+    print(path_target_flag)
+    if (path_target_flag=='dev'):
+         path_target = os.path.join(path_current, "图纸/磁各庄站")
+        # path_target = os.path.join(path_current, "图纸/积水潭站")
+        # path_target = os.path.join(path_current, "图纸/金安桥站")
+        # path_target = os.path.join(path_current, "图纸/西洼地站")
+        # path_target = os.path.join(path_current, "图纸/测试")
 
     if path_target is None:
         print("请输入正确的文件目录：")
@@ -106,7 +113,7 @@ def main_check(path_target=None, checkId=-1):
 
     #checkFiles.discard(str(data_CAD['constructionSteps'].keys()))
     print('未检测到以下图纸：'+str(checkFiles))
-    error_ = {'file': 'extractions', 'errorCode': 414, 'errorTitle': '缺少部分CAD(extractions)提取结果', 'path': str(checkFiles)}
+    error_ = {'file': str(checkFiles), 'errorCode': 414, 'errorTitle': '缺少部分CAD(extractions)提取结果', 'path': str(checkFiles)}
     log_error(error_, errors)
     all_errors.extend(errors)
 

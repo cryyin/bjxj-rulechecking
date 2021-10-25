@@ -774,45 +774,57 @@ def rule_8_2(data_CAD, list_of_content=None):
                 # tableArray.append(str(tableData['data']))
                 # tablearray=np.array[len(rowInTable['row'])][len(table['table'])]
             tableArray = np.reshape(tableArray, (len(table['table']), len(rowInTable['row'])))  # 转成与图纸一样的表格
+            freq_CAD = pd.DataFrame(tableArray)
+            if freq_CAD.empty:
+                error_ = {'errorCode': 420, 'errorTitle': '缺少明挖监控量测表', 'errorMsg': '缺少明挖监控量测表', 'path': []}
+                log_error(error_, errors)
+            else:
+                # print(np.argwhere(tableArray == '地表沉降'))
+                idx_Landsubsidence_x, idx_Landsubsidence_y = np.argwhere(tableArray == '地表沉降')[0]
+                idx_VerticalDisplacement_x, idx_VerticalDisplacement_y = np.argwhere(tableArray == '桩顶竖向位移')[0]
+                idx_HorizontalDisplacement_x, idx_HorizontalDisplacement_y = np.argwhere(tableArray == '桩顶水平位移')[0]
+                idx_ControlStandard_x, idx_ControlStandard_y = np.argwhere(tableArray == '变形控制标准')[0]
 
-            #print(np.argwhere(tableArray == '地表沉降'))
-            idx_Landsubsidence_x, idx_Landsubsidence_y = np.argwhere(tableArray == '地表沉降')[0]
-            idx_VerticalDisplacement_x, idx_VerticalDisplacement_y = np.argwhere(tableArray == '桩顶竖向位移')[0]
-            idx_HorizontalDisplacement_x, idx_HorizontalDisplacement_y = np.argwhere(tableArray == '桩顶水平位移')[0]
-            idx_ControlStandard_x,idx_ControlStandard_y = np.argwhere(tableArray == '变形控制标准')[0]
+                # 地表沉降变形控制标准判断
+                if (int(re.match("(\d\d)mm", tableArray[idx_Landsubsidence_x, idx_ControlStandard_y]).group(1)) > 30
+                        or int(re.match("(\d\d)mm", tableArray[idx_Landsubsidence_x, idx_ControlStandard_y]).group(
+                            1)) < 20):
+                    error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
+                              'errorMsg': "地表沉降变形控制标准与规范不一致, 图纸中为：{:s}，应>=20且<=30".format(
+                                  re.match("(\d\d)mm", tableArray[idx_Landsubsidence_x, idx_ControlStandard_y]).group(
+                                      1)),
+                              'path': boundings[count_1]}
+                    log_error(error_, errors)
+                # 桩顶竖向位移判断
+                if (int(re.match("(\d\d)mm", tableArray[idx_VerticalDisplacement_x, idx_ControlStandard_y]).group(
+                        1)) != 10):
+                    error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
+                              'errorMsg': "桩顶竖向位移与规范不一致, 图纸中为：{:s}，应为10mm".format(
+                                  re.match("(\d\d)mm",
+                                           tableArray[idx_VerticalDisplacement_x, idx_ControlStandard_y]).group(1)),
+                              'path': boundings[count_1]}
+                    log_error(error_, errors)
+                # 桩顶水平位移判断
+                if (int(re.match("(\d\d)mm", tableArray[idx_HorizontalDisplacement_x, idx_ControlStandard_y]).group(
+                        1)) != 10):
+                    error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
+                              'errorMsg': "桩顶水平位移与规范不一致, 图纸中为：{:s}，应为10mm".format(
+                                  re.match("(\d\d)mm",
+                                           tableArray[idx_HorizontalDisplacement_x, idx_ControlStandard_y]).group(1)),
+                              'path': boundings[count_1]}
+                    log_error(error_, errors)
+                '''freq_rule = np.array([
+                                        ['序号','监测项目','监测仪器及元件','测点布置','监测精度','变形控制标准','监测频率'],
+                                        ['1','基坑及其周围环境观察','--','对开挖后的工程地质及水文地质的观察记录（地层、节理裂隙形态及充填性、含水情况等）;支护裂隙和支护状态的观察描述;邻近建（构）筑物及地面的变形、裂缝等的观察描述。','--','--','全过程，1次/天，情况异常时加密监测频率。'],
+                                        ['2','地表沉降','水准仪','平面布置见监控量测平面图，纵向每20m左右一个监测断面，基坑每侧2个监测点;主监测断面80m一个，基坑每侧4个监测点;','%%P0.3mm','30mm,变化速率2mm/d','详见本图《基坑施工监测频率表》 '],
+                                        ['3','桩顶竖向位移','水准仪','横向布置如图，纵向每20m左右一监测断面。','%%P0.3mm','10mm,变化速率1mm/d', '详见本图《基坑施工监测频率表》 '],
+                                        ['4','桩顶水平位移','经纬仪或全站仪','横向布置如图，纵向每20m左右一监测断面。','%%P0.3mm', '10mm,变化速率2mm/d','详见本图《基坑施工监测频率表》 '],
+                                        ['5','桩体水平位移','测斜仪','横向布置如图，纵向每40m左右一监测断面。沿桩竖直方向上间距为1m，监测总深度为桩长。','0.02mm/0.5m','30mm,变化速率2mm/d','详见本图《基坑施工监测频率表》 '],
+                                        ['6','支撑轴力','应变计、轴力计、频率接收仪','横向布置如图，纵向每40m左右一监测断面。','0.15%%%F.s', '详见钢支撑轴力表','详见本图《基坑施工监测频率表》 '],
+                                        ['7','地下水位','电测水位计、PVC管','横向布置如图，纵向每40m左右一监测断面。','5.0mm','基坑底以下1m，0.5m/d', '1次/（1~2）天']
+                                    ])'''
 
-            #地表沉降变形控制标准判断
-            if(int(re.match("(\d\d)mm",tableArray[idx_Landsubsidence_x,idx_ControlStandard_y]).group(1))>30
-                    or int(re.match("(\d\d)mm",tableArray[idx_Landsubsidence_x,idx_ControlStandard_y]).group(1))<20):
-                error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
-                          'errorMsg': "地表沉降变形控制标准与规范不一致, 图纸中为：{:s}，应>=20且<=30".format(
-                              re.match("(\d\d)mm",tableArray[idx_Landsubsidence_x,idx_ControlStandard_y]).group(1)),
-                          'path': boundings[count_1]}
-                log_error(error_, errors)
-            #桩顶竖向位移判断
-            if (int(re.match("(\d\d)mm", tableArray[idx_VerticalDisplacement_x, idx_ControlStandard_y]).group(1)) != 10):
-                error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
-                          'errorMsg': "桩顶竖向位移与规范不一致, 图纸中为：{:s}，应为10mm".format(
-                              re.match("(\d\d)mm", tableArray[idx_VerticalDisplacement_x, idx_ControlStandard_y]).group(1)),
-                          'path': boundings[count_1]}
-                log_error(error_, errors)
-            # 桩顶水平位移判断
-            if (int(re.match("(\d\d)mm", tableArray[idx_HorizontalDisplacement_x, idx_ControlStandard_y]).group(1)) != 10):
-                error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
-                          'errorMsg': "桩顶水平位移与规范不一致, 图纸中为：{:s}，应为10mm".format(
-                              re.match("(\d\d)mm", tableArray[idx_HorizontalDisplacement_x, idx_ControlStandard_y]).group(1)),
-                          'path': boundings[count_1]}
-                log_error(error_, errors)
-            '''freq_rule = np.array([
-                                    ['序号','监测项目','监测仪器及元件','测点布置','监测精度','变形控制标准','监测频率'],
-                                    ['1','基坑及其周围环境观察','--','对开挖后的工程地质及水文地质的观察记录（地层、节理裂隙形态及充填性、含水情况等）;支护裂隙和支护状态的观察描述;邻近建（构）筑物及地面的变形、裂缝等的观察描述。','--','--','全过程，1次/天，情况异常时加密监测频率。'],
-                                    ['2','地表沉降','水准仪','平面布置见监控量测平面图，纵向每20m左右一个监测断面，基坑每侧2个监测点;主监测断面80m一个，基坑每侧4个监测点;','%%P0.3mm','30mm,变化速率2mm/d','详见本图《基坑施工监测频率表》 '],
-                                    ['3','桩顶竖向位移','水准仪','横向布置如图，纵向每20m左右一监测断面。','%%P0.3mm','10mm,变化速率1mm/d', '详见本图《基坑施工监测频率表》 '],
-                                    ['4','桩顶水平位移','经纬仪或全站仪','横向布置如图，纵向每20m左右一监测断面。','%%P0.3mm', '10mm,变化速率2mm/d','详见本图《基坑施工监测频率表》 '],
-                                    ['5','桩体水平位移','测斜仪','横向布置如图，纵向每40m左右一监测断面。沿桩竖直方向上间距为1m，监测总深度为桩长。','0.02mm/0.5m','30mm,变化速率2mm/d','详见本图《基坑施工监测频率表》 '],
-                                    ['6','支撑轴力','应变计、轴力计、频率接收仪','横向布置如图，纵向每40m左右一监测断面。','0.15%%%F.s', '详见钢支撑轴力表','详见本图《基坑施工监测频率表》 '],
-                                    ['7','地下水位','电测水位计、PVC管','横向布置如图，纵向每40m左右一监测断面。','5.0mm','基坑底以下1m，0.5m/d', '1次/（1~2）天']
-                                ])'''
+
 
 
 

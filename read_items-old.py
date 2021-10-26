@@ -120,10 +120,9 @@ def read_calculation(path):
         check_types = ["钢支撑刚度验算","钢支撑强度验算","钢支撑整体稳定性验算","钢支撑挠度验算"]
         check_names = ["刚度","强度","稳定性","挠度"]
 
-        target_tt = ""
         for flag in flags:
             for tp in ttypes:
-                if flag in text_order and tp in text_order[flag]:
+                if tp in text_order[flag]:
                     target_tt = tp
                     D = []
                     if "剖面" in text_order[flag]:
@@ -134,7 +133,7 @@ def read_calculation(path):
                         data["钢支撑计算"][target_tt] = {}
                     break
             if len(num_order)>flag+1:
-                if flag+1 in num_order and flag in num_order and (num_order[flag+1] - num_order[flag])>1:
+                if (num_order[flag+1] - num_order[flag])>1:
                     starts = -1
                     ends = -1
                     for op,ct in enumerate(check_types):
@@ -142,13 +141,12 @@ def read_calculation(path):
                             starts = num_order[flag]
                             ends = num_order[flag+1]
                             ck_name = check_names[op]
-                            if target_tt!= "" and ck_name not in data["钢支撑计算"][target_tt]:
+                            if ck_name not in data["钢支撑计算"][target_tt]:
                                 data["钢支撑计算"][target_tt][ck_name] = ""
                             break
                     if starts!=-1 and ends!=-1:
                         for i,cont in enumerate(range(starts+1,ends)):
-                            if target_tt!="":
-                                data["钢支撑计算"][target_tt][ck_name] += file.paragraphs[cont].text
+                            data["钢支撑计算"][target_tt][ck_name] += file.paragraphs[cont].text
 
     if data["钢支撑计算"]=={}:
         for title in title2table:

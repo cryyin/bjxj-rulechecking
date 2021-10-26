@@ -57,7 +57,7 @@ def read_calculation(path):
     # 1.	设计依据
     flags = []
     for i,p in enumerate(file.paragraphs):
-        if p.text.endswith("设计依据") or p.text.endswith("计算依据") or p.text.endswith("设计遵照的规范") or p.text.endswith("主要规范、标准") or p.text.endswith("遵循的规范与标准") or p.text.endswith("采用的规范") or p.text.endswith("主要规范"):
+        if p.text.endswith("设计依据") or p.text.endswith("计算依据") or p.text.endswith("设计遵照的规范") or p.text.endswith("主要规范、标准"):
             flags.append(i)
 
     # print(flags)
@@ -111,8 +111,8 @@ def read_calculation(path):
     if flags!= []:
         flags.append(flags[-1]+1)
     print("@@@@@@@@@@@@@@@@@@",flags)
-    #for flag in flags:
-    #    print(text_order[flag])
+    for flag in flags:
+        print(text_order[flag])
 
     # 标题就是钢支撑相关的
     if len(flags)>1:
@@ -120,10 +120,9 @@ def read_calculation(path):
         check_types = ["钢支撑刚度验算","钢支撑强度验算","钢支撑整体稳定性验算","钢支撑挠度验算"]
         check_names = ["刚度","强度","稳定性","挠度"]
 
-        target_tt = ""
         for flag in flags:
             for tp in ttypes:
-                if flag in text_order and tp in text_order[flag]:
+                if tp in text_order[flag]:
                     target_tt = tp
                     D = []
                     if "剖面" in text_order[flag]:
@@ -134,7 +133,7 @@ def read_calculation(path):
                         data["钢支撑计算"][target_tt] = {}
                     break
             if len(num_order)>flag+1:
-                if flag+1 in num_order and flag in num_order and (num_order[flag+1] - num_order[flag])>1:
+                if (num_order[flag+1] - num_order[flag])>1:
                     starts = -1
                     ends = -1
                     for op,ct in enumerate(check_types):
@@ -142,32 +141,31 @@ def read_calculation(path):
                             starts = num_order[flag]
                             ends = num_order[flag+1]
                             ck_name = check_names[op]
-                            if target_tt!= "" and ck_name not in data["钢支撑计算"][target_tt]:
+                            if ck_name not in data["钢支撑计算"][target_tt]:
                                 data["钢支撑计算"][target_tt][ck_name] = ""
                             break
                     if starts!=-1 and ends!=-1:
                         for i,cont in enumerate(range(starts+1,ends)):
-                            if target_tt!="":
-                                data["钢支撑计算"][target_tt][ck_name] += file.paragraphs[cont].text
+                            data["钢支撑计算"][target_tt][ck_name] += file.paragraphs[cont].text
 
     if data["钢支撑计算"]=={}:
         for title in title2table:
             if "剖面" in title:
-                Dk = re.findall(r"\d-\d剖面",title)
+                D = re.findall(r"\d-\d剖面",title)
             for table in title2table[title]:
                 for i,row in enumerate(table.rows):
                     for j,cell in enumerate(row.cells):
                         if "强度验算" in cell.text:
                             #print(title,i,j,cell.text,table.rows[i+7].cells [j+2].text)
-                            if 'Dk' in locals() or 'Dk' in globals() and Dk!=[]:
-                                for part in Dk:
+                            if D!=[]:
+                                for part in D:
                                     if part not in data["钢支撑计算"]:
                                         data["钢支撑计算"][part] = {}
                                     data["钢支撑计算"][part]["刚度"] = ("刚度验算："+table.rows[i+7].cells [j+2].text)
                         if "平面内稳定性验算" in cell.text:
                             #print(title,i,j,cell.text,table.rows[i+11].cells [j+2].text)
-                            if 'Dk' in locals() or 'Dk' in globals() and Dk!=[]:
-                                for part in Dk:
+                            if D!=[]:
+                                for part in D:
                                     if part not in data["钢支撑计算"]:
                                         data["钢支撑计算"][part] = {}
                                     if "稳定性" not in data["钢支撑计算"][part]:
@@ -175,8 +173,8 @@ def read_calculation(path):
                                     data["钢支撑计算"][part]["稳定性"] += ("平面内稳定性验算：" + table.rows[i+11].cells [j+2].text+"；")
                         if "平面外稳定性验算" in cell.text:
                             #print(title,i,j,cell.text,table.rows[i+9].cells [j+2].text)
-                            if 'Dk' in locals() or 'Dk' in globals() and Dk!=[]:
-                                for part in Dk:
+                            if D!=[]:
+                                for part in D:
                                     if part not in data["钢支撑计算"]:
                                         data["钢支撑计算"][part] = {}
                                     if "稳定性" not in data["钢支撑计算"][part]:
@@ -482,7 +480,6 @@ def read_calculation(path):
     
     print(path,"\n")
     for kk in data.keys():
-        #if "设计依据" in kk:
         print(kk," @@ ",data[kk],"\n")
     print("############################################################################")
     return data
@@ -574,8 +571,8 @@ def extract_framework(path):
             if i not in num_order:
                 text_order.append(p.text)
                 num_order.append(i)
-    #print(text_order)
-    #print(num_order)
+    print(text_order)
+    print(num_order)
     return text_order,num_order
 
 def iter_block_items(parent):
@@ -622,42 +619,37 @@ def find_title(text_order,num_order,i):
 
 
 if __name__ == '__main__':
+    path_current=os.getcwd()
+    path_target=os.path.join(path_current, "图纸/金安桥站")
 
+    ####################
+    # 读取规范
+    path_regu="./规范/规范、标准.txt"
+    regus=read_regulation(path_regu)
 
-    files = os.listdir("图纸v1")
-    for file in files:
-        print(file)
-        path_current=os.getcwd()
-        path_target=os.path.join(path_current, "图纸v1/"+file)
+    ####################
+    # 读取计算书
+    path_calc=os.path.join(path_target, "计算书")
+    formats={}  # used to indicate whether the file is found, first find .docx, if not find .doc
+    for filename in os.listdir(path_calc):
+        if not re.match("^~", filename):
+            if filename.endswith("docx"):
+                formats['docx']=filename
+            elif filename.endswith("doc"):
+                formats['doc']=filename
+    
+    if 'docx' in formats:
+        filename_calc=os.path.join(path_calc, formats['docx'])
+    elif 'doc' in formats:
+        filename_calc=os.path.join(path_calc, formats['doc'])
+    else:
+        raise(path_calc+"中没有找到计算书！")
+    
+    # 判断计算书的格式，如果是.doc结尾的话转为.docx格式
+    if filename_calc.endswith(".doc"):
+        doc2docx(filename_calc)
+        filename_calc=filename_calc[:-3]+"docx"
 
-        ####################
-        # 读取规范
-        path_regu="./规范/规范、标准.txt"
-        regus=read_regulation(path_regu)
-
-        ####################
-        # 读取计算书
-        path_calc=os.path.join(path_target, "计算书")
-        formats={}  # used to indicate whether the file is found, first find .docx, if not find .doc
-        for filename in os.listdir(path_calc):
-            if not re.match("^~", filename):
-                if filename.endswith("docx"):
-                    formats['docx']=filename
-                elif filename.endswith("doc"):
-                    formats['doc']=filename
-        
-        if 'docx' in formats:
-            filename_calc=os.path.join(path_calc, formats['docx'])
-        elif 'doc' in formats:
-            filename_calc=os.path.join(path_calc, formats['doc'])
-        else:
-            raise(path_calc+"中没有找到计算书！")
-        
-        # 判断计算书的格式，如果是.doc结尾的话转为.docx格式
-        if filename_calc.endswith(".doc"):
-            doc2docx(filename_calc)
-            filename_calc=filename_calc[:-3]+"docx"
-
-        print(filename_calc)
-        data_calc=read_calculation(filename_calc)
+    print(filename_calc)
+    data_calc=read_calculation(filename_calc)
 

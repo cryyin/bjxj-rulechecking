@@ -242,7 +242,7 @@ def rule_4_3(data_CAD, data_calc):
 
             embed_depth_calc[sec_name] = float(value)
     else:
-        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中缺少必要信息', 'errorMsg': "计算书中缺少嵌固深度信息",
+        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "计算书中缺少嵌固深度信息",
                   'path': bounding}
         log_error(error_, errors)
         return errors
@@ -343,7 +343,7 @@ def rule_4_4(data_CAD, data_calc, list_of_content=None):
     if '钢支撑轴力' in data_calc and data_calc['钢支撑轴力']:
         zhouli_calc = data_calc['钢支撑轴力']
     else:
-        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中缺少必要信息', 'errorMsg': '计算书中缺少钢支撑轴力', 'path': []}
+        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': '计算书中缺少钢支撑轴力', 'path': []}
         log_error(error_, errors)
         return errors
     # 匹配图纸和计算书中的轴力值表
@@ -903,7 +903,7 @@ def rule_10_1(data, regus):
     print("10.1 设计依据检查开始...")
 
     if '设计依据' not in data:
-        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中缺少必要信息', 'errorMsg': "计算书中缺少设计规范", 'path': []}
+        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "计算书中缺少设计规范", 'path': []}
         log_error(error_, errors)
 
     for i, item in enumerate(data['设计依据']):
@@ -939,7 +939,7 @@ def rule_10_2(data):
     errors = []
     print("10.2 计算参数检查开始...")
     if ("荷载参数" not in data) or ("20kPa" not in data['荷载参数']):
-        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中缺少必要信息', 'errorMsg': "缺少荷载参数说明", 'path': []}
+        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "缺少荷载参数说明", 'path': []}
         log_error(error_, errors)
 
     print("10.2 计算参数检查完毕。\n")
@@ -963,12 +963,12 @@ def rule_10_4(data):
     #     log_error(error_,errors)
 
     if '设计标准' not in data or '地下结构应按抗浮设防水位进行抗浮稳定性验算' not in data['设计标准']:
-        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中缺少必要信息', 'errorMsg': "计算书中缺少 地下结构抗浮稳定性验算 的说明",
+        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "计算书中缺少 地下结构抗浮稳定性验算 的说明",
                   'path': []}
         log_error(error_, errors)
 
     if '设计标准' not in data or '砂性土地层' not in data['设计标准']:
-        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中缺少必要信息', 'errorMsg': "计算书中缺少 地层参数 的说明",
+        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "计算书中缺少 地层参数 的说明",
                   'path': []}
         log_error(error_, errors)
 
@@ -983,7 +983,7 @@ def rule_10_5(data):
     print("10.5 支护结构计算 审查开始...")
 
     if '钢支撑计算' not in data or not data['钢支撑计算']:
-        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中缺少必要信息', 'errorMsg': "计算书中缺少钢支撑计算结果", 'path': []}
+        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "计算书中缺少钢支撑计算结果", 'path': []}
         log_error(error_, errors)
         return errors
 
@@ -998,13 +998,13 @@ def rule_10_5(data):
                     error_['path'] = []
                     log_error(error_, errors)
             else:
-                error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中缺少必要信息',
+                error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整',
                           'errorMsg': "计算书中缺少 {:s}钢支撑{:s} 信息".format(sec_name, item_name), 'path': []}
                 log_error(error_, errors)
 
     # 10.5.3 钢腰梁及连系梁计算
     if '钢腰梁及连系梁计算' not in data or not data['钢腰梁及连系梁计算']:
-        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中缺少必要信息', 'errorMsg': "计算书中缺少钢腰梁及连系梁计算结果",
+        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "计算书中缺少钢腰梁及连系梁计算结果",
                   'path': []}
         log_error(error_, errors)
         return errors
@@ -1019,7 +1019,7 @@ def rule_10_5(data):
                 error_['path'] = []
                 log_error(error_, errors)
         else:
-            error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中缺少必要信息',
+            error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整',
                       'errorMsg': "计算书中缺少钢腰梁及连系梁{:s}验算信息".format(item_name), 'path': []}
             log_error(error_, errors)
 
@@ -1036,11 +1036,11 @@ def rule_10_6(data):
 
     print("10.6 工程材料信息 审查开始...")
     if ('钢筋等级' not in data) or (not check_words(steel_levels, ''.join(data['钢筋等级']))):
-        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中缺少必要信息', 'errorMsg': "钢筋等级未标", 'path': []}
+        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "钢筋等级未标", 'path': []}
         log_error(error_, errors)
 
     if ('型号钢' not in data) or (not check_words(steel_types, ''.join(data['型号钢']))):
-        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中缺少必要信息', 'errorMsg': "钢筋型号未标", 'path': []}
+        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "钢筋型号未标", 'path': []}
         log_error(error_, errors)
 
     print("10.6 工程材料信息 审查完毕。\n")
@@ -1058,7 +1058,7 @@ def rule_10_7(data):
                       'path': []}
             log_error(error_, errors)
     else:
-        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中缺少必要信息', 'errorMsg': "缺少 抗浮计算 说明", 'path': []}
+        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "缺少 抗浮计算 说明", 'path': []}
         log_error(error_, errors)
 
     print("10.7 抗浮计算 审查完毕。\n")

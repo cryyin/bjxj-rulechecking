@@ -17,11 +17,11 @@ def main_check(path_target=None, checkId=-1):
     path_target_flag = conf.get("env", "state")  # 获取指定section 的option值
     print(path_target_flag)
     if (path_target_flag=='dev'):
-        # path_target = os.path.join(path_current, "图纸/磁各庄站")
+         path_target = os.path.join(path_current, "图纸/磁各庄站")
         # path_target = os.path.join(path_current, "图纸/积水潭站")
         # path_target = os.path.join(path_current, "图纸/金安桥站")
         # path_target = os.path.join(path_current, "图纸/西洼地站")
-         path_target = os.path.join(path_current, "图纸/测试")
+        # path_target = os.path.join(path_current, "图纸/测试")
 
     if path_target is None:
         print("请输入正确的文件目录：")

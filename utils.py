@@ -124,7 +124,7 @@ def check_item(data, item_name, sec_name):
                     error_['errorMsg'] = "{:s} {:s} {:s} 验算结果不满足要求!".format(sec_name, item_name, key)
                 elif check_res == 2:
                     error_['errorCode'] = 1002
-                    error_['errorTitle'] = '计算书中缺少必要信息'
+                    error_['errorTitle'] = '计算书中信息表达不完整'
                     error_['errorMsg'] = "{:s} {:s} {:s} 验算结果缺少满足要求的描述".format(sec_name, item_name, key)
         elif isinstance(data[item_name], str):
             check_res = check_requirement(data[item_name])
@@ -134,7 +134,7 @@ def check_item(data, item_name, sec_name):
                 error_['errorMsg'] = "{:s} {:s} 验算结果不满足要求!".format(sec_name, item_name)
             elif check_res == 2:
                 error_['errorCode'] = 1002
-                error_['errorTitle'] = '计算书中缺少必要信息'
+                error_['errorTitle'] = '计算书中信息表达不完整'
                 error_['errorMsg'] = "{:s} {:s} 验算结果缺少满足要求的描述".format(sec_name, item_name)
 
     return error_

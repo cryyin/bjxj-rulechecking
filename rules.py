@@ -776,11 +776,13 @@ def rule_8_2(data_CAD, list_of_content=None):
                         #print(type(idx))
 
                         idx_x, idx_y = np.split(idx, 2)
+
+                        '''
                         #print(type(freq_CAD[idx_x, idx_y].tobytes()))
                         #cad_waitToCompare=freq_CAD[idx_x, idx_y].tostring()
-                        temp1=freq_CAD[idx_x, idx_y].tolist()[0]
+                        temp1=freq_CAD[idx_x, idx_y].tolist()[0]                    #[0]
                         temp1=strQ2B(temp1)
-                        '''
+                        
                         temp2='(1~2次)/1d'
                         temp3=freq_CAD[idx_x, idx_y]
                         with open("11.txt","w") as f:
@@ -807,7 +809,7 @@ def rule_8_2(data_CAD, list_of_content=None):
                         #matchObj = re.search(rb"(\d)?[\~\-](\d)次", temp2.decode())
                         #matchObj = re.search("(\d)?[\~\-](\d)次", temp1)
                         '''
-                        matchObj = re.search("(\d)?[\~\-](\d)次", temp1)
+                        matchObj = re.search("(\d)?[\~\-](\d)次", strQ2B(freq_CAD[idx_x, idx_y].tolist()[0]))
                         if matchObj.group(1)=='1' and matchObj.group(2)=='2':
                             continue
                         # print(type(freq_CAD[int(idx_x)][int(idx_y)]))

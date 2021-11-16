@@ -35,9 +35,14 @@ def rule_3_3(data_CAD, data_calc):
         if re.search(r'\d-\d', sec_name):
             name = re.search(r'\d-\d', sec_name).group(0)
         else:
-            error_ = {'file': '计算书', 'errorCode': 1001, 'errorTitle': '计算书中信息错误',
-                      'errorMsg': '计算书中的剖面名称为：{:s}，无数字编号'.format(sec_name), 'path': []}
-            log_error(error_, errors)
+            if re.search(r'剖面', sec_name):
+                error_ = {'file': '计算书', 'errorCode': 1001, 'errorTitle': '计算书中信息错误',
+                          'errorMsg': '计算书中的剖面名称为：{:s}，无数字编号'.format(sec_name), 'path': []}
+                log_error(error_, errors)
+            else:
+                error_ = {'file': '计算书', 'errorCode': 1001, 'errorTitle': '计算书中信息错误',
+                          'errorMsg': '计算书中未找到剖面名称', 'path': []}
+                log_error(error_, errors)
 
             name = sec_name
 

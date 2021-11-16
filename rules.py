@@ -674,7 +674,11 @@ def rule_8_2(data_CAD, list_of_content=None):
                         full_data=''
                         full_data_flag=0
                     else:
+                        if ''.join(tableData['data'])=='-':
+                            tempdata.append('--')
+                            continue
                         tempdata.extend(tableData['data'])
+                        #print(type(tableData['data']))
                 tableArray.append(tempdata)
                 tempdata=list()
                     #tableArray.append(str(tableData['data']))

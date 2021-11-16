@@ -773,9 +773,16 @@ def rule_8_2(data_CAD, list_of_content=None):
                 tempdata = list()
                 # tableArray.append(str(tableData['data']))
                 # tablearray=np.array[len(rowInTable['row'])][len(table['table'])]
-            tableArray = np.reshape(tableArray, (len(table['table']), len(rowInTable['row'])))  # 转成与图纸一样的表格
-            freq_CAD = pd.DataFrame(tableArray)
-            if freq_CAD.empty:
+            flag_failed=0
+            try:
+                tableArray = np.reshape(tableArray, (len(table['table']), len(rowInTable['row'])))  # 转成与图纸一样的表格
+                freq_CAD = pd.DataFrame(tableArray)
+            except:
+                flag_failed=1
+            if flag_failed:
+                error_ = {'errorCode': 420, 'errorTitle': '明挖监控量测表格式异常', 'errorMsg': '明挖监控量测表格式异常', 'path': []}
+                log_error(error_, errors)
+            elif freq_CAD.empty and not flag_failed:
                 error_ = {'errorCode': 420, 'errorTitle': '缺少明挖监控量测表', 'errorMsg': '缺少明挖监控量测表', 'path': []}
                 log_error(error_, errors)
             else:

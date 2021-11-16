@@ -8,12 +8,42 @@ import pandas as pd
 from read_items import *
 from utils import *
 import numpy as np
+import chardet
+import sys
 
 # 中文数字与阿拉伯数字的映射
 chinese2arabic = {'一': '1', '首': '1', '二': '2', '三': '3', '四': '4', '五': '5', '六': '6', '七': '7', '八': '8', '九': '9',
                   '十': '10'}
 arabic2chinese = dict((value, key) for key, value in chinese2arabic.items())
 arabic2chinese['1'] = '一'
+
+
+def strQ2B(ustring):
+    """全角转半角"""
+    rstring = ""
+    for uchar in ustring:
+        inside_code = ord(uchar)
+        if inside_code == 12288:  # 全角空格直接转换
+            inside_code = 32
+        elif (inside_code >= 65281 and inside_code <= 65374):  # 全角字符（除空格）根据关系转化
+            inside_code -= 65248
+
+        rstring += chr(inside_code)
+    return rstring
+
+
+def strB2Q(ustring):
+    """半角转全角"""
+    rstring = ""
+    for uchar in ustring:
+        inside_code = ord(uchar)
+        if inside_code == 32:  # 半角空格直接转化
+            inside_code = 12288
+        elif inside_code >= 32 and inside_code <= 126:  # 半角字符（除空格）根据关系转化
+            inside_code += 65248
+
+        rstring += chr(inside_code)
+    return rstring
 
 
 # 3 平面图审核
@@ -559,6 +589,7 @@ def rule_8_2(data_CAD, list_of_content=None):
                  '>20': {"≤5": "--", "5~10": "--", "10~15": "--", "15~20": "--", ">20": "2次/1d"}
                  }
 
+
     # 获取CAD图纸表格中的监测频率
     freq_CAD = {}
     row_title = []
@@ -742,8 +773,43 @@ def rule_8_2(data_CAD, list_of_content=None):
                 if not c.all():
                     for idx in np.argwhere(c == 0):
                         # print(idx)
-                        print(type(idx))
+                        #print(type(idx))
+
                         idx_x, idx_y = np.split(idx, 2)
+                        #print(type(freq_CAD[idx_x, idx_y].tobytes()))
+                        #cad_waitToCompare=freq_CAD[idx_x, idx_y].tostring()
+                        temp1=freq_CAD[idx_x, idx_y].tolist()[0]
+                        temp1=strQ2B(temp1)
+                        '''
+                        temp2='(1~2次)/1d'
+                        temp3=freq_CAD[idx_x, idx_y]
+                        with open("11.txt","w") as f:
+                            f.write(temp2)
+                        print(temp3)
+                        testflag=0
+                        if temp1.strip()==temp2.strip():
+                            testflag=1
+                        print(testflag)
+                        
+                        print(chardet.detect(temp3))
+                        print(chardet.detect(temp2.encode()))
+                        '''
+                        '''
+                        for i in range(len(temp1)):
+                            print(str(ord(temp1[i])))
+                        print('qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq')
+                        for i in range(len(temp2)):
+                            print(str(ord(temp2[i])))
+
+                        #tempa=re.search("\d次~\d次",bytes.decode(freq_CAD[idx_x, idx_y].tostring())).group(1)
+                        #matchObj=re.search("(\d)?[\~\-](\d)次",temp3.decode('utf-8','ignore'))
+                        #matchObj = re.search("(\d)?[\~\-](\d)次", temp3.decode('ISO-8859-1'))
+                        #matchObj = re.search(rb"(\d)?[\~\-](\d)次", temp2.decode())
+                        #matchObj = re.search("(\d)?[\~\-](\d)次", temp1)
+                        '''
+                        matchObj = re.search("(\d)?[\~\-](\d)次", temp1)
+                        if matchObj.group(1)=='1' and matchObj.group(2)=='2':
+                            continue
                         # print(type(freq_CAD[int(idx_x)][int(idx_y)]))
                         # print(type(freq_rule[int(idx_x)][int(idx_y)]))
                         error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
@@ -789,7 +855,7 @@ def rule_8_2(data_CAD, list_of_content=None):
             except:
                 flag_failed=1
             if flag_failed:
-                error_ = {'errorCode': 420, 'errorTitle': '明挖监控量测表格式异常', 'errorMsg': '明挖监控量测表格式异常', 'path': []}
+                error_ = {'errorCode': 420, 'errorTitle': '明挖监控量测表格式异常', 'errorMsg': '明挖监控量测表格式异常,请检查提取是否有特殊符号不识别', 'path': []}
                 log_error(error_, errors)
             elif freq_CAD.empty and not flag_failed:
                 error_ = {'errorCode': 420, 'errorTitle': '缺少明挖监控量测表', 'errorMsg': '缺少明挖监控量测表', 'path': []}
@@ -812,6 +878,7 @@ def rule_8_2(data_CAD, list_of_content=None):
 
                 if flag_Landsubsidence and flag_ControlStandard:
                     # 地表沉降变形控制标准判断
+                    print(type(tableArray[idx_Landsubsidence_x, idx_ControlStandard_y]))
                     if (int(re.search("(\d\d)mm", tableArray[idx_Landsubsidence_x, idx_ControlStandard_y]).group(1)) > 30
                             or int(re.search("(\d\d)mm", tableArray[idx_Landsubsidence_x, idx_ControlStandard_y]).group(
                                 1)) < 20):

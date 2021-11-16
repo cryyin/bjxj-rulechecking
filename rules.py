@@ -780,39 +780,54 @@ def rule_8_2(data_CAD, list_of_content=None):
                 log_error(error_, errors)
             else:
                 # print(np.argwhere(tableArray == '地表沉降'))
-                idx_Landsubsidence_x, idx_Landsubsidence_y = np.argwhere(tableArray == '地表沉降')[0]
-                idx_VerticalDisplacement_x, idx_VerticalDisplacement_y = np.argwhere(tableArray == '桩顶竖向位移')[0]
-                idx_HorizontalDisplacement_x, idx_HorizontalDisplacement_y = np.argwhere(tableArray == '桩顶水平位移')[0]
-                idx_ControlStandard_x, idx_ControlStandard_y = np.argwhere(tableArray == '变形控制标准')[0]
+                flag_Landsubsidence,flag_VerticalDisplacement,flag_HorizontalDisplacement,flag_ControlStandard=0,0,0,0
+                if np.argwhere(tableArray == '地表沉降').any():
+                    idx_Landsubsidence_x, idx_Landsubsidence_y = np.argwhere(tableArray == '地表沉降')[0]
+                    flag_Landsubsidence=1
+                if np.argwhere(tableArray == '桩顶竖向位移').any():
+                    idx_VerticalDisplacement_x, idx_VerticalDisplacement_y = np.argwhere(tableArray == '桩顶竖向位移')[0]
+                    flag_VerticalDisplacement=1
+                if np.argwhere(tableArray == '桩顶水平位移').any():
+                    idx_HorizontalDisplacement_x, idx_HorizontalDisplacement_y = np.argwhere(tableArray == '桩顶水平位移')[0]
+                    flag_HorizontalDisplacement=1
+                if np.argwhere(tableArray == '变形控制标准').any():
+                    idx_ControlStandard_x, idx_ControlStandard_y = np.argwhere(tableArray == '变形控制标准')[0]
+                    flag_ControlStandard=1
 
-                # 地表沉降变形控制标准判断
-                if (int(re.match("(\d\d)mm", tableArray[idx_Landsubsidence_x, idx_ControlStandard_y]).group(1)) > 30
-                        or int(re.match("(\d\d)mm", tableArray[idx_Landsubsidence_x, idx_ControlStandard_y]).group(
-                            1)) < 20):
-                    error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
-                              'errorMsg': "地表沉降变形控制标准与规范不一致, 图纸中为：{:s}，应>=20且<=30".format(
-                                  re.match("(\d\d)mm", tableArray[idx_Landsubsidence_x, idx_ControlStandard_y]).group(
-                                      1)),
-                              'path': boundings[count_1]}
-                    log_error(error_, errors)
-                # 桩顶竖向位移判断
-                if (int(re.match("(\d\d)mm", tableArray[idx_VerticalDisplacement_x, idx_ControlStandard_y]).group(
-                        1)) != 10):
-                    error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
-                              'errorMsg': "桩顶竖向位移与规范不一致, 图纸中为：{:s}，应为10mm".format(
-                                  re.match("(\d\d)mm",
-                                           tableArray[idx_VerticalDisplacement_x, idx_ControlStandard_y]).group(1)),
-                              'path': boundings[count_1]}
-                    log_error(error_, errors)
-                # 桩顶水平位移判断
-                if (int(re.match("(\d\d)mm", tableArray[idx_HorizontalDisplacement_x, idx_ControlStandard_y]).group(
-                        1)) != 10):
-                    error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
-                              'errorMsg': "桩顶水平位移与规范不一致, 图纸中为：{:s}，应为10mm".format(
-                                  re.match("(\d\d)mm",
-                                           tableArray[idx_HorizontalDisplacement_x, idx_ControlStandard_y]).group(1)),
-                              'path': boundings[count_1]}
-                    log_error(error_, errors)
+                if flag_Landsubsidence and flag_ControlStandard:
+                    # 地表沉降变形控制标准判断
+                    if (int(re.search("(\d\d)mm", tableArray[idx_Landsubsidence_x, idx_ControlStandard_y]).group(1)) > 30
+                            or int(re.search("(\d\d)mm", tableArray[idx_Landsubsidence_x, idx_ControlStandard_y]).group(
+                                1)) < 20):
+                        error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
+                                  'errorMsg': "地表沉降变形控制标准与规范不一致, 图纸中为：{:s}，应>=20且<=30".format(
+                                      re.search("(\d\d)mm",
+                                               tableArray[idx_Landsubsidence_x, idx_ControlStandard_y]).group(
+                                          1)),
+                                  'path': boundings[count_1]}
+                        log_error(error_, errors)
+                if flag_VerticalDisplacement and flag_ControlStandard:
+                    # 桩顶竖向位移判断
+                    if (int(re.search("(\d\d)mm", tableArray[idx_VerticalDisplacement_x, idx_ControlStandard_y]).group(
+                            1)) != 10):
+                        error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
+                                  'errorMsg': "桩顶竖向位移与规范不一致, 图纸中为：{:s}，应为10mm".format(
+                                      re.search("(\d\d)mm",
+                                               tableArray[idx_VerticalDisplacement_x, idx_ControlStandard_y]).group(1)),
+                                  'path': boundings[count_1]}
+                        log_error(error_, errors)
+                if flag_HorizontalDisplacement and flag_ControlStandard:
+                    # 桩顶水平位移判断
+                    if (int(re.search("(\d\d)mm", tableArray[idx_HorizontalDisplacement_x, idx_ControlStandard_y]).group(
+                            1)) != 10):
+                        error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
+                                  'errorMsg': "桩顶水平位移与规范不一致, 图纸中为：{:s}，应为10mm".format(
+                                      re.search("(\d\d)mm",
+                                               tableArray[idx_HorizontalDisplacement_x, idx_ControlStandard_y]).group(
+                                          1)),
+                                  'path': boundings[count_1]}
+                        log_error(error_, errors)
+
                 '''freq_rule = np.array([
                                         ['序号','监测项目','监测仪器及元件','测点布置','监测精度','变形控制标准','监测频率'],
                                         ['1','基坑及其周围环境观察','--','对开挖后的工程地质及水文地质的观察记录（地层、节理裂隙形态及充填性、含水情况等）;支护裂隙和支护状态的观察描述;邻近建（构）筑物及地面的变形、裂缝等的观察描述。','--','--','全过程，1次/天，情况异常时加密监测频率。'],

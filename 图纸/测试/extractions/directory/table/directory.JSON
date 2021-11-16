@@ -2,10 +2,10 @@
     "tableGroup": [
         {
             "bounding": [
-                "810994,483690",
-                "810994,505960",
-                "827994,505960",
-                "827994,483690"
+                "35643,15392",
+                "35643,37662",
+                "52643,37662",
+                "52643,15392"
             ],
             "table": [
                 {
@@ -52,7 +52,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-001"
+                                "BJXJC-SS-403-01-01-02-JG-001A"
                             ],
                             "table": []
                         },
@@ -65,7 +65,9 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -82,7 +84,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-002"
+                                "BJXJC-SS-403-01-01-02-JG-002A"
                             ],
                             "table": []
                         },
@@ -95,7 +97,9 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -112,7 +116,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-003"
+                                "BJXJC-SS-403-01-01-02-JG-003A"
                             ],
                             "table": []
                         },
@@ -125,7 +129,9 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -142,7 +148,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-004"
+                                "BJXJC-SS-403-01-01-02-JG-004A"
                             ],
                             "table": []
                         },
@@ -155,7 +161,9 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -172,7 +180,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-005"
+                                "BJXJC-SS-403-01-01-02-JG-005A"
                             ],
                             "table": []
                         },
@@ -185,7 +193,9 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -202,20 +212,22 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-006"
+                                "BJXJC-SS-403-01-01-02-JG-006A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "总平面图"
+                                "设计说明（六）"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -232,20 +244,22 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-007"
+                                "BJXJC-SS-403-01-01-02-JG-007A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "地质纵断面图"
+                                "总平面图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -262,20 +276,22 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-008"
+                                "BJXJC-SS-403-01-01-02-JG-008A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "围护结构平面布置图（一）"
+                                "地质纵剖面图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -292,20 +308,22 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-009"
+                                "BJXJC-SS-403-01-01-02-JG-009A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "围护结构平面布置图（二）"
+                                "围护结构平面布置图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -322,20 +340,22 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-010"
+                                "BJXJC-SS-403-01-01-02-JG-010A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "围护结构1-1、2-2剖面图"
+                                "第一道支撑平面布置图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -352,20 +372,22 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-011"
+                                "BJXJC-SS-403-01-01-02-JG-011A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "围护结构3-3、4-4、5-5剖面图"
+                                "第二、三道支撑平面布置图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -382,20 +404,22 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-012"
+                                "BJXJC-SS-403-01-01-02-JG-012A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "A型围护桩配筋图"
+                                "围护结构1-1剖面图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -412,20 +436,22 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-013"
+                                "BJXJC-SS-403-01-01-02-JG-013A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "B型围护桩配筋图"
+                                "围护结构2-2剖面图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -442,20 +468,22 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-014"
+                                "BJXJC-SS-403-01-01-02-JG-014A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "内支撑详图（一）"
+                                "围护结构3-3剖面图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -472,20 +500,22 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-015"
+                                "BJXJC-SS-403-01-01-02-JG-015A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "内支撑详图（二）"
+                                "围护结构4-4剖面图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -502,20 +532,22 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-016"
+                                "BJXJC-SS-403-01-01-02-JG-016A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "内支撑详图（三）"
+                                "围护结构5-5剖面图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -532,20 +564,22 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-017"
+                                "BJXJC-SS-403-01-01-02-JG-017A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "内支撑详图（四）"
+                                "围护结构配筋图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -562,20 +596,22 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-018"
+                                "BJXJC-SS-403-01-01-02-JG-018A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "内支撑详图（五）"
+                                "内支撑详图（一）"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -592,20 +628,22 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-019"
+                                "BJXJC-SS-403-01-01-02-JG-019A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "内支撑详图（六）"
+                                "内支撑详图（二）"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -622,20 +660,22 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-020"
+                                "BJXJC-SS-403-01-01-02-JG-020A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "施工步序图"
+                                "内支撑详图（三）"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -652,20 +692,22 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-021"
+                                "BJXJC-SS-403-01-01-02-JG-021A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "监控量测平面图"
+                                "内支撑详图（四）"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -682,20 +724,22 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-302-02-01-00-JG-022"
+                                "BJXJC-SS-403-01-01-02-JG-022A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "监控量测剖面图"
+                                "内支撑详图（五）"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -711,17 +755,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "BJXJC-SS-403-01-01-02-JG-023A"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "内支撑详图（六）"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -737,17 +787,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "BJXJC-SS-403-01-01-02-JG-024A"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "施工步序图"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -763,17 +819,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "BJXJC-SS-403-01-01-02-JG-025A"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "基坑监控量测剖面图"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -789,17 +851,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "BJXJC-SS-403-01-01-02-JG-026A"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "基坑监控量测平面图"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -815,17 +883,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -841,17 +915,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -867,17 +947,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -893,17 +979,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -912,10 +1004,10 @@
         },
         {
             "bounding": [
-                "829994,483690",
-                "829994,505960",
-                "846994,505960",
-                "846994,483690"
+                "54643,15392",
+                "54643,37662",
+                "71643,37662",
+                "71643,15392"
             ],
             "table": [
                 {
@@ -961,17 +1053,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -987,17 +1085,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1013,17 +1117,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1039,17 +1149,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1065,17 +1181,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1091,17 +1213,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1117,17 +1245,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1143,17 +1277,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1169,17 +1309,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1195,17 +1341,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1221,17 +1373,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1247,17 +1405,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1273,17 +1437,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1299,17 +1469,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1325,17 +1501,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1351,17 +1533,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1377,17 +1565,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1403,17 +1597,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1429,17 +1629,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1455,17 +1661,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1481,17 +1693,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1507,17 +1725,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1533,17 +1757,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1559,17 +1789,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1585,17 +1821,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1611,17 +1853,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1637,17 +1885,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1663,17 +1917,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1689,17 +1949,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]
@@ -1715,17 +1981,23 @@
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
-                            "data": [],
+                            "data": [
+                                "--"
+                            ],
                             "table": []
                         }
                     ]

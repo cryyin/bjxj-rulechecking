@@ -1109,7 +1109,7 @@ if __name__ == '__main__':
     path_calc = os.path.join(path_target, "calculations")
     formats = {}  # used to indicate whether the file is found, first find .docx, if not find .doc
     for filename in os.listdir(path_calc):
-        if not re.match("^~", filename):
+        if not re.search("^~", filename):
             if filename.endswith("docx"):
                 formats['docx'] = filename
             elif filename.endswith("doc"):

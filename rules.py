@@ -498,11 +498,18 @@ def rule_7_1(data_CAD):
                     # 检测架设钢支撑间距
                     if re.search(r"(架设|施作).[^拆除]*?支撑", content):
                         distances = []
-                        temps = re.findall(r"\d+.\d+m|\d+m", content)
+                        temps = re.findall(r"\d+.\d+mm|m|\d+mm|m", content)
                         for temp in temps:
                             distances.append(float(re.search(r"\d+.\d+|\d+", temp).group(0)))
+                            BasicUnit=re.search(r"mm|m", temp).group(0)
                         for distance in distances:
-                            if distance != 0.5:
+                            if distance != 500.0:
+                                print('1')
+                            if BasicUnit == 'mm' and distance != 500.0:
+                                error_ = {'file': filename, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
+                                          'errorMsg': step + "架设间距不满足 0.5m 要求", 'path': []}
+                                log_error(error_, errors)
+                            elif BasicUnit == 'm' and distance != 0.5:
                                 error_ = {'file': filename, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
                                           'errorMsg': step + "架设间距不满足 0.5m 要求", 'path': []}
                                 log_error(error_, errors)

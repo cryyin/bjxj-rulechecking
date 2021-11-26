@@ -8,8 +8,8 @@ import pandas as pd
 from read_items import *
 from utils import *
 import numpy as np
-import chardet
-import sys
+#import chardet
+#import sys
 
 # 中文数字与阿拉伯数字的映射
 chinese2arabic = {'一': '1', '首': '1', '二': '2', '三': '3', '四': '4', '五': '5', '六': '6', '七': '7', '八': '8', '九': '9',

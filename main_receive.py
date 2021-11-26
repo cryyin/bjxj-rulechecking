@@ -51,9 +51,11 @@ class ReceiveHandler(tornado.web.RequestHandler, ABC):
                         zipf.extractall(file_dir)
 
                     # 修改计算书的名字,去掉中文乱码
-                    for file in os.listdir(os.path.join(file_dir, 'calculations')):
-                        file_path = os.path.join(file_dir, 'calculations', file)
-                        os.rename(file_path, file_path.encode('cp437').decode('gbk'))
+                    if os.path.exists(os.path.join(file_dir, 'calculations')):
+                        for file in os.listdir(os.path.join(file_dir, 'calculations')):
+                            file_path = os.path.join(file_dir, 'calculations', file)
+                            os.rename(file_path, file_path.encode('cp437').decode('gbk'))
+
 
                 print("Start rules checking")
                 report = main_check(file_dir, checkId)

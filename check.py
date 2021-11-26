@@ -37,31 +37,36 @@ def main_check(path_target=None, checkId=-1):
     # 读取计算书
     path_calc = os.path.join(path_target, "calculations")
     formats = {}  # used to indicate whether the file is found, first find .docx, if not find .doc
-    for filename in os.listdir(path_calc):
-        if not re.match("^~", filename):
-            if filename.endswith("docx"):
-                formats['docx'] = filename
-            elif filename.endswith("doc"):
-                formats['doc'] = filename
-    filename_calc = None
-    if 'docx' in formats:
-        filename_calc = os.path.join(path_calc, formats['docx'])
-    elif 'doc' in formats:
-        filename_calc = os.path.join(path_calc, formats['doc'])
+    if os.path.exists(path_calc):
+        for filename in os.listdir(path_calc):
+            if not re.match("^~", filename):
+                if filename.endswith("docx"):
+                    formats['docx'] = filename
+                elif filename.endswith("doc"):
+                    formats['doc'] = filename
+        filename_calc = None
+        if 'docx' in formats:
+            filename_calc = os.path.join(path_calc, formats['docx'])
+        elif 'doc' in formats:
+            filename_calc = os.path.join(path_calc, formats['doc'])
+        else:
+            states['calc'] = False
+
+        # 判断计算书的格式，如果是.doc结尾的话转为.docx格式
+        if filename_calc and filename_calc.endswith(".doc"):
+            doc2docx(filename_calc)
+            filename_calc = filename_calc[:-3] + "docx"
+
+        data_calc = None
+        if filename_calc:
+            data_calc = read_calculation(filename_calc)
+
+        if not data_calc:  # 不能读取计算书
+            states['calc'] = False
     else:
         states['calc'] = False
 
-    # 判断计算书的格式，如果是.doc结尾的话转为.docx格式
-    if filename_calc and filename_calc.endswith(".doc"):
-        doc2docx(filename_calc)
-        filename_calc = filename_calc[:-3] + "docx"
 
-    data_calc = None
-    if filename_calc:
-        data_calc = read_calculation(filename_calc)
-
-    if not data_calc:  # 不能读取计算书
-        states['calc'] = False
 
     ##########################
     # 读取CAD识图结果

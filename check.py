@@ -91,19 +91,15 @@ def main_check(path_target=None, checkId=-1):
     if not states['cad']:
         error_ = {'file': 'extractions', 'errorCode': 401, 'errorTitle': '缺少CAD(extractions)提取结果', 'path': []}
         log_error(error_, errors)
-        all_errors.extend(errors)
     if not states['calc']:
         error_ = {'file': 'calculations', 'errorCode': 402, 'errorTitle': '缺少计算书(calculations)提取结果', 'path': []}
         log_error(error_, errors)
-        all_errors.extend(errors)
     if not states['list']:
         error_ = {'file': 'directory', 'errorCode': 403, 'errorTitle': '缺少CAD图纸目录(directory)提取结果', 'path': []}
         log_error(error_, errors)
-        all_errors.extend(errors)
     if not states['regus']:
         error_ = {'file': 'regulations', 'errorCode': 404, 'errorTitle': '缺少规范文件(regulations)', 'path': []}
         log_error(error_, errors)
-        all_errors.extend(errors)
 
     ###########################
     # 对照目录判断缺少文件
@@ -121,8 +117,8 @@ def main_check(path_target=None, checkId=-1):
     for filename_print in checkFiles:
         error_ = {'file': str(filename_print), 'errorCode': 414, 'errorTitle': '缺少部分CAD(extractions)提取结果','path': []}
         log_error(error_, errors)
-        all_errors.extend(errors)
 
+    all_errors.extend(errors)
 
     #for filenames_of_cad in data_CAD
 

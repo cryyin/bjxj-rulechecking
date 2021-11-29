@@ -498,13 +498,11 @@ def rule_7_1(data_CAD):
                     # 检测架设钢支撑间距
                     if re.search(r"(架设|施作).[^拆除]*?支撑", content):
                         distances = []
-                        temps = re.findall(r"\d+.\d+mm|m|\d+mm|m", content)
+                        temps = re.findall(r"\d+.\d+(?:mm|m)|\d+(?:mm|m)", content)
                         for temp in temps:
                             distances.append(float(re.search(r"\d+.\d+|\d+", temp).group(0)))
                             BasicUnit=re.search(r"mm|m", temp).group(0)
                         for distance in distances:
-                            if distance != 500.0:
-                                print('1')
                             if BasicUnit == 'mm' and distance != 500.0:
                                 error_ = {'file': filename, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
                                           'errorMsg': step + "架设间距不满足 0.5m 要求", 'path': []}
@@ -735,13 +733,13 @@ def rule_8_2(data_CAD, list_of_content=None):
             freq_CAD.drop(columns=0,inplace=True)
             #freq_CAD = freq_CAD.iloc[1:,1:1]
             #print(freq_CAD)
-            freq_CAD.index = freq_CAD.iloc[0].values
-            new_header = freq_CAD.iloc[0]  # grab the first row for the header
+            #freq_CAD.index = freq_CAD.iloc[0].values
+            #new_header = freq_CAD.iloc[0]  # grab the first row for the header
             #new_header = new_header.iloc[1:]
             #print(new_header)
             freq_CAD = freq_CAD[1:]  # take the data less the header row
             print(freq_CAD)
-            freq_CAD.columns = new_header  # set the header row as the df header
+            #freq_CAD.columns = new_header  # set the header row as the df header
             freq_CAD = freq_CAD.iloc[: , 1:]
             #new_index = freq_CAD.iloc[:,0]
 
@@ -777,7 +775,20 @@ def rule_8_2(data_CAD, list_of_content=None):
                 freq_CAD = np.array(freq_CAD)
                 freq_rule = np.array(freq_rule)
                 c = (freq_CAD == freq_rule)
-                if not c.all():
+                if not c:
+                    if freq_CAD.shape[0]<freq_rule.shape[0]:
+                        error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
+                                  'errorMsg': "缺少{:d}米后的基坑开挖深度".format(
+                                      freq_CAD.shape[0] * 5),
+                                  'path': boundings[count_1]}
+                        log_error(error_, errors)
+                    if freq_CAD.shape[1]<freq_rule.shape[1]:
+                        error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
+                                  'errorMsg': "缺少{:d}米后的基坑设计深度".format(
+                                      freq_CAD.shape[1] * 5),
+                                  'path': boundings[count_1]}
+                        log_error(error_, errors)
+                elif not c.all():
                     for idx in np.argwhere(c == 0):
                         # print(idx)
                         #print(type(idx))

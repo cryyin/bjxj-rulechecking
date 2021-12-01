@@ -2,10 +2,10 @@
     "tableGroup": [
         {
             "bounding": [
-                "-296525,118796",
-                "-296525,141066",
-                "-279525,141066",
-                "-279525,118796"
+                "6902145,-2157008",
+                "6902145,-2134563",
+                "6919471,-2134563",
+                "6919471,-2157008"
             ],
             "table": [
                 {
@@ -13,21 +13,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "序号"
+                                "编号"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "图号"
+                                "图  号"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "图名"
+                                "图  名"
                             ],
                             "table": []
                         },
@@ -45,53 +45,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "01"
+                                "1"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-001"
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-001A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "设计总说明（一）"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "02"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "BJM19-SS-308-02-01-00-JG-002"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "设计总说明（二）"
+                                "设计说明（一）"
                             ],
                             "table": []
                         },
@@ -109,53 +77,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "03"
+                                "2"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-003"
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-002A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "设计总说明（三）"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "04"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "BJM19-SS-308-02-01-00-JG-004"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "设计总说明（四）"
+                                "设计说明（二）"
                             ],
                             "table": []
                         },
@@ -173,53 +109,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "05"
+                                "3"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-005"
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-003A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "设计总说明（五）"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "06"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "BJM19-SS-308-02-01-00-JG-006"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "设计总说明（六）"
+                                "设计说明（三）"
                             ],
                             "table": []
                         },
@@ -237,53 +141,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "07"
+                                "4"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-007"
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-004A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "总平面图"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "08"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "BJM19-SS-308-02-01-00-JG-008"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "左线地质剖面图"
+                                "设计说明（四）"
                             ],
                             "table": []
                         },
@@ -301,21 +173,149 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "09"
+                                "5"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-009"
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-005A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "右线地质剖面图"
+                                "设计说明（五）"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "6"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-006A"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "施工总平面图"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "7"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-007A"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "围护结构平面布置图"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "8"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-008A"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1-1地质纵剖面图"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "9"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-009A"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "第一道支撑平面布置图"
                             ],
                             "table": []
                         },
@@ -340,14 +340,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-010"
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-010A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "首道钢支撑平面布置图"
+                                "第二～四道支撑平面布置图"
                             ],
                             "table": []
                         },
@@ -372,14 +372,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-011"
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-011A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "第二~四道钢支撑平面布置图"
+                                "围护结构1-1剖面图"
                             ],
                             "table": []
                         },
@@ -404,14 +404,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-012"
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-012A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "1-1纵剖面图"
+                                "围护结构2-2剖面图"
                             ],
                             "table": []
                         },
@@ -436,14 +436,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-013"
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-013A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "2-2横剖面图"
+                                "围护结构3-3剖面图"
                             ],
                             "table": []
                         },
@@ -468,14 +468,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-014"
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-014A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "3-3横剖面图"
+                                "围护结构4-4剖面图"
                             ],
                             "table": []
                         },
@@ -500,14 +500,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-015"
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-015A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "4-4横剖面图"
+                                "围护结构配筋图"
                             ],
                             "table": []
                         },
@@ -532,21 +532,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-016"
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-016A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "5-5横剖面图"
+                                "2号施工竖井横通道上方桩间土体加固图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "2号施工竖井横通道上方桩间土体加固图"
                             ],
                             "table": []
                         }
@@ -564,14 +564,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-017"
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-017A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "6-6横剖面图"
+                                "内支撑详图（一）"
                             ],
                             "table": []
                         },
@@ -596,14 +596,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-018"
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-018A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "7-7横剖面图"
+                                "内支撑详图（二）"
                             ],
                             "table": []
                         },
@@ -628,14 +628,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-019"
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-019A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "贝雷梁详图（一） "
+                                "内支撑详图（三）"
                             ],
                             "table": []
                         },
@@ -660,14 +660,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-020"
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-020A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "贝雷梁详图（二）"
+                                "内支撑详图（四）"
                             ],
                             "table": []
                         },
@@ -692,14 +692,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-021"
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-021A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "围护桩及冠梁钢筋图"
+                                "内支撑详图（五）"
                             ],
                             "table": []
                         },
@@ -724,14 +724,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-022"
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-022A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "%%C609、%%C630钢支撑拼接及活络头大样图 "
+                                "内支撑详图（六）"
                             ],
                             "table": []
                         },
@@ -756,14 +756,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-023"
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-023A"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "%%C800钢支撑拼接及活络头大样图 "
+                                "基坑监测平面图"
                             ],
                             "table": []
                         },
@@ -788,103 +788,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-024"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "钢围檩结构大样图 "
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "25"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "BJM19-SS-308-02-01-00-JG-025"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "钢围檩支架及拼接大样图 "
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "26"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "BJM19-SS-308-02-01-00-JG-026"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "监控量测平面图"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "27"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "BJM19-SS-308-02-01-00-JG-027"
+                                "BJM8Ⅲ-03-13-02-03（2）-SS-JG-024A"
                             ],
                             "table": []
                         },
@@ -903,111 +807,15 @@
                             "table": []
                         }
                     ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "28"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "BJM19-SS-308-02-01-00-JG-028"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "风险关系及应对措施图（一）"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "29"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "BJM19-SS-308-02-01-00-JG-029"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "风险关系及应对措施图（二）"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "30"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "BJM19-SS-308-02-01-00-JG-030"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "风险关系及应对措施图（三）"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
                 }
             ]
         },
         {
             "bounding": [
-                "-277525,118796",
-                "-277525,141066",
-                "-260525,141066",
-                "-260525,118796"
+                "6920471,-2156976",
+                "6920471,-2134563",
+                "6937797,-2134563",
+                "6937797,-2156976"
             ],
             "table": [
                 {
@@ -1015,21 +823,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "序号"
+                                "编号"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "图号"
+                                "图  号"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "图名"
+                                "图  名"
                             ],
                             "table": []
                         },
@@ -1037,198 +845,6 @@
                             "category": "TEXT",
                             "data": [
                                 "备注"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "31"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "BJM19-SS-308-02-01-00-JG-031"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "车站施工步序图(一)"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "32"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "BJM19-SS-308-02-01-00-JG-032"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "车站施工步序图(二)"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
                             ],
                             "table": []
                         }

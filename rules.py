@@ -277,9 +277,12 @@ def rule_4_3(data_CAD, data_calc):
 
             embed_depth_calc[sec_name] = float(value)
     else:
-        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "计算书中缺少嵌固深度信息",
-                  'path': bounding}
-        log_error(error_, errors)
+        for key in bounding:
+            error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "计算书中缺少嵌固深度信息",
+                      'path': bounding[key]}
+            log_error(error_, errors)
+
+
         return errors
 
     # 需要考虑单位换算

@@ -60,6 +60,8 @@ def main_check(path_target=None, checkId=-1):
         data_calc = None
         if filename_calc:
             data_calc = read_calculation(filename_calc)
+            if data_calc=='open failed':
+                states['openFailed']=False
 
         if not data_calc:  # 不能读取计算书
             states['calc'] = False
@@ -94,6 +96,10 @@ def main_check(path_target=None, checkId=-1):
     if not states['calc']:
         error_ = {'file': 'calculations', 'errorCode': 402, 'errorTitle': '缺少计算书(calculations)提取结果', 'path': []}
         log_error(error_, errors)
+    if not states['openFailed']:
+        error_ = {'file': 'calculations', 'errorCode': 421, 'errorTitle': '计算书(calculations)打开失败', 'path': []}
+        log_error(error_, errors)
+        states['calc']=False
     if not states['list']:
         error_ = {'file': 'directory', 'errorCode': 403, 'errorTitle': '缺少CAD图纸目录(directory)提取结果', 'path': []}
         log_error(error_, errors)

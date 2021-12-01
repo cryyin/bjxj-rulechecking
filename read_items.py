@@ -45,7 +45,11 @@ def read_calculation(path):
     try:
         file = docx.Document(path)
     except:
-        raise(path+"计算书不存在！")
+        print("计算书打开失败")
+        return 'open failed'
+
+
+
 
     text_order,num_order = extract_framework(path)
     title2table = extract_title2table(path,text_order,num_order)

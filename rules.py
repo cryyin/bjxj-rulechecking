@@ -778,19 +778,20 @@ def rule_8_2(data_CAD, list_of_content=None):
                 freq_CAD = np.array(freq_CAD)
                 freq_rule = np.array(freq_rule)
                 c = (freq_CAD == freq_rule)
-                if not c:
-                    if freq_CAD.shape[0]<freq_rule.shape[0]:
-                        error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
-                                  'errorMsg': "缺少{:d}米后的基坑开挖深度".format(
-                                      freq_CAD.shape[0] * 5),
-                                  'path': boundings[count_1]}
-                        log_error(error_, errors)
-                    if freq_CAD.shape[1]<freq_rule.shape[1]:
-                        error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
-                                  'errorMsg': "缺少{:d}米后的基坑设计深度".format(
-                                      freq_CAD.shape[1] * 5),
-                                  'path': boundings[count_1]}
-                        log_error(error_, errors)
+                if not isinstance(c,np.ndarray):
+                    if not c:
+                        if freq_CAD.shape[0] < freq_rule.shape[0]:
+                            error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
+                                      'errorMsg': "缺少{:d}米后的基坑开挖深度".format(
+                                          freq_CAD.shape[0] * 5),
+                                      'path': boundings[count_1]}
+                            log_error(error_, errors)
+                        if freq_CAD.shape[1] < freq_rule.shape[1]:
+                            error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
+                                      'errorMsg': "缺少{:d}米后的基坑设计深度".format(
+                                          freq_CAD.shape[1] * 5),
+                                      'path': boundings[count_1]}
+                            log_error(error_, errors)
                 elif not c.all():
                     for idx in np.argwhere(c == 0):
                         # print(idx)

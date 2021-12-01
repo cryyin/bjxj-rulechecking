@@ -2,10 +2,10 @@
     "tableGroup": [
         {
             "bounding": [
-                "-79555,-100900",
-                "-79555,-77275",
-                "-65045,-77275",
-                "-65045,-100900"
+                "-296525,118796",
+                "-296525,141066",
+                "-279525,141066",
+                "-279525,118796"
             ],
             "table": [
                 {
@@ -13,7 +13,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "编号"
+                                "序号"
                             ],
                             "table": []
                         },
@@ -45,53 +45,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "1"
+                                "01"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM14-04-03-02-SS-JG01-001A"
+                                "BJM19-SS-308-02-01-00-JG-001"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "围护结构设计总说明（一）"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "2"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "BJM14-04-03-02-SS-JG01-002A"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "围护结构设计总说明（二）"
+                                "设计总说明（一）"
                             ],
                             "table": []
                         },
@@ -109,53 +77,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "3"
+                                "02"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM14-04-03-02-SS-JG01-003A"
+                                "BJM19-SS-308-02-01-00-JG-002"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "围护结构设计总说明（三）"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "4"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "BJM14-04-03-02-SS-JG01-004A"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "围护结构设计总说明（四）"
+                                "设计总说明（二）"
                             ],
                             "table": []
                         },
@@ -173,53 +109,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "5"
+                                "03"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM14-04-03-02-SS-JG01-005A"
+                                "BJM19-SS-308-02-01-00-JG-003"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "围护结构设计总说明（五）"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "6"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "BJM14-04-03-02-SS-JG01-006A"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "围护结构设计总说明（六）"
+                                "设计总说明（三）"
                             ],
                             "table": []
                         },
@@ -237,28 +141,28 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "7"
+                                "04"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM14-04-03-02-SS-JG01-007A"
+                                "BJM19-SS-308-02-01-00-JG-004"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "主体围护结构总平面图"
+                                "设计总说明（四）"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "1:500"
+                                "--"
                             ],
                             "table": []
                         }
@@ -269,28 +173,28 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "8"
+                                "05"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM14-04-03-02-SS-JG01-008A"
+                                "BJM19-SS-308-02-01-00-JG-005"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "地质纵剖面图"
+                                "设计总说明（五）"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "1:200"
+                                "--"
                             ],
                             "table": []
                         }
@@ -301,28 +205,124 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "9"
+                                "06"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM14-04-03-02-SS-JG01-009A"
+                                "BJM19-SS-308-02-01-00-JG-006"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "主体围护结构平面图一"
+                                "设计总说明（六）"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "1:200"
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "07"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "BJM19-SS-308-02-01-00-JG-007"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "总平面图"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "08"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "BJM19-SS-308-02-01-00-JG-008"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "左线地质剖面图"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "09"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "BJM19-SS-308-02-01-00-JG-009"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "右线地质剖面图"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
                             ],
                             "table": []
                         }
@@ -340,21 +340,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM14-04-03-02-SS-JG01-010A"
+                                "BJM19-SS-308-02-01-00-JG-010"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "主体围护结构平面图二"
+                                "首道钢支撑平面布置图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "1:200"
+                                "--"
                             ],
                             "table": []
                         }
@@ -372,21 +372,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM14-04-03-02-SS-JG01-011A"
+                                "BJM19-SS-308-02-01-00-JG-011"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "主体围护结构1-1纵剖面图"
+                                "第二~四道钢支撑平面布置图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "1:200"
+                                "--"
                             ],
                             "table": []
                         }
@@ -404,21 +404,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM14-04-03-02-SS-JG01-012A"
+                                "BJM19-SS-308-02-01-00-JG-012"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "主体围护结构2-2断面图"
+                                "1-1纵剖面图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "1:100"
+                                "--"
                             ],
                             "table": []
                         }
@@ -436,21 +436,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM14-04-03-02-SS-JG01-013A"
+                                "BJM19-SS-308-02-01-00-JG-013"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "主体围护结构3-3断面图"
+                                "2-2横剖面图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "1:100"
+                                "--"
                             ],
                             "table": []
                         }
@@ -468,21 +468,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM14-04-03-02-SS-JG01-014A"
+                                "BJM19-SS-308-02-01-00-JG-014"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "主体围护结构4-4断面图"
+                                "3-3横剖面图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "1:100"
+                                "--"
                             ],
                             "table": []
                         }
@@ -500,21 +500,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM14-04-03-02-SS-JG01-015A"
+                                "BJM19-SS-308-02-01-00-JG-015"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "主体围护结构5-5断面图"
+                                "4-4横剖面图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "1:100"
+                                "--"
                             ],
                             "table": []
                         }
@@ -532,21 +532,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM14-04-03-02-SS-JG01-016A"
+                                "BJM19-SS-308-02-01-00-JG-016"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "主体围护结构6-6断面图"
+                                "5-5横剖面图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "1:100"
+                                "--"
                             ],
                             "table": []
                         }
@@ -564,21 +564,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM14-04-03-02-SS-JG01-017A"
+                                "BJM19-SS-308-02-01-00-JG-017"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "主体围护结构7-7断面图"
+                                "6-6横剖面图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "1:100"
+                                "--"
                             ],
                             "table": []
                         }
@@ -596,21 +596,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM14-04-03-02-SS-JG01-018A"
+                                "BJM19-SS-308-02-01-00-JG-018"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "主体结构施工步序图"
+                                "7-7横剖面图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "1:100"
+                                "--"
                             ],
                             "table": []
                         }
@@ -628,14 +628,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM14-04-03-02-SS-JG01-019A"
+                                "BJM19-SS-308-02-01-00-JG-019"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "围护结构配筋图"
+                                "贝雷梁详图（一） "
                             ],
                             "table": []
                         },
@@ -660,21 +660,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM14-04-03-02-SS-JG01-020A"
+                                "BJM19-SS-308-02-01-00-JG-020"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "钢支撑与冠梁连接节点大样图"
+                                "贝雷梁详图（二）"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "1:100"
+                                "--"
                             ],
                             "table": []
                         }
@@ -692,21 +692,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM14-04-03-02-SS-JG01-021A"
+                                "BJM19-SS-308-02-01-00-JG-021"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "围护桩钢支撑节点详图"
+                                "围护桩及冠梁钢筋图"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "1:100"
+                                "--"
                             ],
                             "table": []
                         }
@@ -724,21 +724,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM14-04-03-02-SS-JG01-022A"
+                                "BJM19-SS-308-02-01-00-JG-022"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "主体围护监控量测平面图"
+                                "%%C609、%%C630钢支撑拼接及活络头大样图 "
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "1:500"
+                                "--"
                             ],
                             "table": []
                         }
@@ -756,14 +756,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM14-04-03-02-SS-JG01-023A"
+                                "BJM19-SS-308-02-01-00-JG-023"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "主体围护监控量测断面图"
+                                "%%C800钢支撑拼接及活络头大样图 "
                             ],
                             "table": []
                         },
@@ -788,14 +788,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "BJM19-SS-308-02-01-00-JG-024"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "钢围檩结构大样图 "
                             ],
                             "table": []
                         },
@@ -820,14 +820,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "BJM19-SS-308-02-01-00-JG-025"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "钢围檩支架及拼接大样图 "
                             ],
                             "table": []
                         },
@@ -852,14 +852,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "BJM19-SS-308-02-01-00-JG-026"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "监控量测平面图"
                             ],
                             "table": []
                         },
@@ -884,14 +884,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "BJM19-SS-308-02-01-00-JG-027"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "监控量测剖面图"
                             ],
                             "table": []
                         },
@@ -916,14 +916,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "BJM19-SS-308-02-01-00-JG-028"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "风险关系及应对措施图（一）"
                             ],
                             "table": []
                         },
@@ -948,14 +948,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "BJM19-SS-308-02-01-00-JG-029"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "风险关系及应对措施图（二）"
                             ],
                             "table": []
                         },
@@ -980,78 +980,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "BJM19-SS-308-02-01-00-JG-030"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "31"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "32"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "风险关系及应对措施图（三）"
                             ],
                             "table": []
                         },
@@ -1068,10 +1004,10 @@
         },
         {
             "bounding": [
-                "-61999,-100900",
-                "-61999,-77275",
-                "-47489,-77275",
-                "-47489,-100900"
+                "-277525,118796",
+                "-277525,141066",
+                "-260525,141066",
+                "-260525,118796"
             ],
             "table": [
                 {
@@ -1079,7 +1015,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "编号"
+                                "序号"
                             ],
                             "table": []
                         },
@@ -1111,966 +1047,6 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "1"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "2"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "3"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "4"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "5"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "6"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "7"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "8"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "9"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "10"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "11"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "12"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "13"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "14"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "15"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "16"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "17"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "18"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "19"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "20"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "21"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "22"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "23"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "24"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "25"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "26"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "27"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "28"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "29"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "30"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
                                 "31"
                             ],
                             "table": []
@@ -2078,14 +1054,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "BJM19-SS-308-02-01-00-JG-031"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "车站施工步序图(一)"
                             ],
                             "table": []
                         },
@@ -2104,6 +1080,902 @@
                             "category": "TEXT",
                             "data": [
                                 "32"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "BJM19-SS-308-02-01-00-JG-032"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "车站施工步序图(二)"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
                             ],
                             "table": []
                         },

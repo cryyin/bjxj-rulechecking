@@ -7,7 +7,7 @@ import pandas as pd
 
 
 def main_check(path_target=None, checkId=-1):
-    states = {'calc': True, 'cad': True, 'list': True, 'regus': True}
+    states = {'calc': True, 'cad': True, 'list': True, 'regus': True,'openFailed':True}
     path_current = os.getcwd()
     # path_target为系统的绝对路径
     report = {}  # 最终反馈的报告

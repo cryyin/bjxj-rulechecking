@@ -106,7 +106,7 @@ def rule_3_3(data_CAD, data_calc):
             #print(nameHadNoStandard_set)
             error_ = {'file': filename, 'errorCode': 417, 'errorTitle': '图纸中缺少必要信息(钻孔灌注桩标注)',
                                         'errorMsg': '桩{:s}缺少标注信息，请检查直径和间距信息'.format(','.join(nameHadNoStandard_set)),
-                                        'path': pile['bounding']}
+                                        'path': []}
             log_error(error_, errors)
 
 
@@ -961,7 +961,15 @@ def rule_8_2(data_CAD, list_of_content=None):
         all_data = recursive_add(table)
         cexieyi_acc = re.search(r'(\d+\.\d+)mm/(\d+\.\d+)?m', all_data)
         if cexieyi_acc:
-            if len(cexieyi_acc.regs) == 3 and float(cexieyi_acc.group(2)) == 0.5:
+            print(cexieyi_acc.group(2))
+            if len(cexieyi_acc.regs) == 3 and cexieyi_acc.group(2) == None:
+                if float(cexieyi_acc.group(1)) > 0.25:
+                    error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
+                              'errorMsg': "测斜仪精度为 {:s}mm/m, 低于规定的 0.25mm/1m".format(cexieyi_acc.group(1),
+                                                                                        cexieyi_acc.group(2)),
+                              'path': boundings[count_2]}
+                    log_error(error_, errors)
+            elif len(cexieyi_acc.regs) == 3 and float(cexieyi_acc.group(2)) == 0.5:
                 if float(cexieyi_acc.group(1)) * 2 > 0.25:
                     print("测斜仪精度为 {:s}mm/{:s}m, 低于规定的 0.25mm/1m".format(cexieyi_acc.group(1), cexieyi_acc.group(2)))
                     error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',

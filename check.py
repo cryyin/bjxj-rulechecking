@@ -14,6 +14,7 @@ def main_check(path_target=None, checkId=-1):
 
     conf = configparser.ConfigParser()
     conf.read(path_current + '/app.conf')  # 文件路径
+    path_target_flag='prod'
     path_target_flag = conf.get("env", "state")  # 获取指定section 的option值
     filechecking_flag = conf.get("func", "filechecking")
 

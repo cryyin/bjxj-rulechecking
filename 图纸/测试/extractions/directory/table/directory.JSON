@@ -2,10 +2,10 @@
     "tableGroup": [
         {
             "bounding": [
-                "-296525,118796",
-                "-296525,141066",
-                "-279525,141066",
-                "-279525,118796"
+                "5334101,-164220",
+                "5334101,-142009",
+                "5347811,-142009",
+                "5347811,-164220"
             ],
             "table": [
                 {
@@ -13,7 +13,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "序号"
+                                "编号"
                             ],
                             "table": []
                         },
@@ -30,11 +30,29 @@
                                 "图名"
                             ],
                             "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "1"
+                            ],
+                            "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "备注"
+                                "BJM19-SS-302-02-01-00-JG-001"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "设计说明（一）"
                             ],
                             "table": []
                         }
@@ -45,28 +63,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "01"
+                                "2"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-001"
+                                "BJM19-SS-302-02-01-00-JG-002"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "设计总说明（一）"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "设计说明（二）"
                             ],
                             "table": []
                         }
@@ -77,28 +88,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "02"
+                                "3"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-002"
+                                "BJM19-SS-302-02-01-00-JG-003"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "设计总说明（二）"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "设计说明（三）"
                             ],
                             "table": []
                         }
@@ -109,28 +113,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "03"
+                                "4"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-003"
+                                "BJM19-SS-302-02-01-00-JG-004"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "设计总说明（三）"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "设计说明（四）"
                             ],
                             "table": []
                         }
@@ -141,28 +138,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "04"
+                                "5"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-004"
+                                "BJM19-SS-302-02-01-00-JG-005"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "设计总说明（四）"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "设计说明（五）"
                             ],
                             "table": []
                         }
@@ -173,28 +163,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "05"
+                                "6"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-005"
+                                "BJM19-SS-302-02-01-00-JG-006"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "设计总说明（五）"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "设计说明（六）"
                             ],
                             "table": []
                         }
@@ -205,28 +188,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "06"
+                                "7"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-006"
+                                "BJM19-SS-302-02-01-00-JG-007"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "设计总说明（六）"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "设计说明（七）"
                             ],
                             "table": []
                         }
@@ -237,14 +213,39 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "07"
+                                "8"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-007"
+                                "BJM19-SS-302-02-01-00-JG-008"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "设计说明（八）"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "9"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "BJM19-SS-302-02-01-00-JG-009"
                             ],
                             "table": []
                         },
@@ -252,77 +253,6 @@
                             "category": "TEXT",
                             "data": [
                                 "总平面图"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "08"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "BJM19-SS-308-02-01-00-JG-008"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "左线地质剖面图"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "09"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "BJM19-SS-308-02-01-00-JG-009"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "右线地质剖面图"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
                             ],
                             "table": []
                         }
@@ -340,21 +270,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-010"
+                                "BJM19-SS-302-02-01-00-JG-010"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "首道钢支撑平面布置图"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "第一道支撑平面布置图（一） "
                             ],
                             "table": []
                         }
@@ -372,21 +295,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-011"
+                                "BJM19-SS-302-02-01-00-JG-011"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "第二~四道钢支撑平面布置图"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "第一道支撑平面布置图（二） "
                             ],
                             "table": []
                         }
@@ -404,21 +320,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-012"
+                                "BJM19-SS-302-02-01-00-JG-012"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "1-1纵剖面图"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "第二、三、四道支撑平面布置图（一） "
                             ],
                             "table": []
                         }
@@ -436,21 +345,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-013"
+                                "BJM19-SS-302-02-01-00-JG-013"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "2-2横剖面图"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "第二、三、四道支撑平面布置图（二） "
                             ],
                             "table": []
                         }
@@ -468,21 +370,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-014"
+                                "BJM19-SS-302-02-01-00-JG-014"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "3-3横剖面图"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "换撑平面布置图"
                             ],
                             "table": []
                         }
@@ -500,21 +395,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-015"
+                                "BJM19-SS-302-02-01-00-JG-015"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "4-4横剖面图"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "地质纵剖面图"
                             ],
                             "table": []
                         }
@@ -532,21 +420,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-016"
+                                "BJM19-SS-302-02-01-00-JG-016"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "5-5横剖面图"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "车站围护结构1-1剖面图"
                             ],
                             "table": []
                         }
@@ -564,21 +445,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-017"
+                                "BJM19-SS-302-02-01-00-JG-017"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "6-6横剖面图"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "车站围护结构2-2剖面图"
                             ],
                             "table": []
                         }
@@ -596,21 +470,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-018"
+                                "BJM19-SS-302-02-01-00-JG-018"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "7-7横剖面图"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "车站围护结构3-3剖面图"
                             ],
                             "table": []
                         }
@@ -628,21 +495,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-019"
+                                "BJM19-SS-302-02-01-00-JG-019"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "贝雷梁详图（一） "
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "车站围护结构4-4剖面图"
                             ],
                             "table": []
                         }
@@ -660,21 +520,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-020"
+                                "BJM19-SS-302-02-01-00-JG-020"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "贝雷梁详图（二）"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "车站围护结构5-5剖面图"
                             ],
                             "table": []
                         }
@@ -692,21 +545,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-021"
+                                "BJM19-SS-302-02-01-00-JG-021"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "围护桩及冠梁钢筋图"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "围护桩、冠梁、挡墙配筋图"
                             ],
                             "table": []
                         }
@@ -724,21 +570,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-022"
+                                "BJM19-SS-302-02-01-00-JG-022"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "%%C609、%%C630钢支撑拼接及活络头大样图 "
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "冠梁、换撑预埋件及钢支撑防脱落构造图"
                             ],
                             "table": []
                         }
@@ -756,21 +595,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-023"
+                                "BJM19-SS-302-02-01-00-JG-023"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "%%C800钢支撑拼接及活络头大样图 "
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "钢支撑拼接图（一）"
                             ],
                             "table": []
                         }
@@ -788,21 +620,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-024"
+                                "BJM19-SS-302-02-01-00-JG-024"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "钢围檩结构大样图 "
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "钢支撑拼接图（二）"
                             ],
                             "table": []
                         }
@@ -820,21 +645,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-025"
+                                "BJM19-SS-302-02-01-00-JG-025"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "钢围檩支架及拼接大样图 "
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "活络头大样图一（%%C609） "
                             ],
                             "table": []
                         }
@@ -852,21 +670,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-026"
+                                "BJM19-SS-302-02-01-00-JG-026"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "监控量测平面图"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "活络头大样图二（%%C609） "
                             ],
                             "table": []
                         }
@@ -884,21 +695,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-027"
+                                "BJM19-SS-302-02-01-00-JG-027"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "监控量测剖面图"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "活络头大样图三（%%C800） "
                             ],
                             "table": []
                         }
@@ -916,21 +720,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-028"
+                                "BJM19-SS-302-02-01-00-JG-028"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "风险关系及应对措施图（一）"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "活络头大样图四（%%C800）"
                             ],
                             "table": []
                         }
@@ -948,21 +745,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-029"
+                                "BJM19-SS-302-02-01-00-JG-029"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "风险关系及应对措施图（二）"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "对撑钢腰梁结构图 "
                             ],
                             "table": []
                         }
@@ -980,21 +770,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-030"
+                                "BJM19-SS-302-02-01-00-JG-030"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "风险关系及应对措施图（三）"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "斜撑钢腰梁结构图"
                             ],
                             "table": []
                         }
@@ -1004,10 +787,10 @@
         },
         {
             "bounding": [
-                "-277525,118796",
-                "-277525,141066",
-                "-260525,141066",
-                "-260525,118796"
+                "5351657,-164220",
+                "5351657,-142009",
+                "5365366,-142009",
+                "5365366,-164220"
             ],
             "table": [
                 {
@@ -1015,7 +798,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "序号"
+                                "编号"
                             ],
                             "table": []
                         },
@@ -1030,13 +813,6 @@
                             "category": "TEXT",
                             "data": [
                                 "图名"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "备注"
                             ],
                             "table": []
                         }
@@ -1054,21 +830,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-031"
+                                "BJM19-SS-302-02-01-00-JG-031"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "车站施工步序图(一)"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "钢腰梁拼接图"
                             ],
                             "table": []
                         }
@@ -1086,21 +855,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJM19-SS-308-02-01-00-JG-032"
+                                "BJM19-SS-302-02-01-00-JG-032"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "车站施工步序图(二)"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "钢腰梁支架结构图"
                             ],
                             "table": []
                         }
@@ -1111,28 +873,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "33"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "BJM19-SS-302-02-01-00-JG-033"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "施工步序图（一）"
                             ],
                             "table": []
                         }
@@ -1143,28 +898,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "34"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "BJM19-SS-302-02-01-00-JG-034"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "施工步序图（二）"
                             ],
                             "table": []
                         }
@@ -1175,28 +923,21 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "35"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "BJM19-SS-302-02-01-00-JG-035"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "监控量测平面图"
                             ],
                             "table": []
                         }
@@ -1207,14 +948,32 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "36"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "BJM19-SS-302-02-01-00-JG-036"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "监控量测剖面图"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "37"
                             ],
                             "table": []
                         },
@@ -1239,46 +998,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "38"
                             ],
                             "table": []
                         },
@@ -1303,46 +1023,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "39"
                             ],
                             "table": []
                         },
@@ -1367,46 +1048,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "40"
                             ],
                             "table": []
                         },
@@ -1431,46 +1073,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "41"
                             ],
                             "table": []
                         },
@@ -1495,46 +1098,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "42"
                             ],
                             "table": []
                         },
@@ -1559,46 +1123,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "43"
                             ],
                             "table": []
                         },
@@ -1623,46 +1148,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "44"
                             ],
                             "table": []
                         },
@@ -1687,46 +1173,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "45"
                             ],
                             "table": []
                         },
@@ -1751,46 +1198,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "46"
                             ],
                             "table": []
                         },
@@ -1815,46 +1223,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "47"
                             ],
                             "table": []
                         },
@@ -1879,46 +1248,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        }
-                    ]
-                },
-                {
-                    "row": [
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "48"
                             ],
                             "table": []
                         },
@@ -1943,14 +1273,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
-                            ],
-                            "table": []
-                        },
-                        {
-                            "category": "TEXT",
-                            "data": [
-                                "--"
+                                "49"
                             ],
                             "table": []
                         },
@@ -1975,6 +1298,13 @@
                         {
                             "category": "TEXT",
                             "data": [
+                                "50"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
                                 "--"
                             ],
                             "table": []
@@ -1983,6 +1313,242 @@
                             "category": "TEXT",
                             "data": [
                                 "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "51"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "52"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "53"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "54"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "55"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "56"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "57"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "58"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "59"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        },
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "--"
+                            ],
+                            "table": []
+                        }
+                    ]
+                },
+                {
+                    "row": [
+                        {
+                            "category": "TEXT",
+                            "data": [
+                                "60"
                             ],
                             "table": []
                         },

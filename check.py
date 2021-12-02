@@ -15,6 +15,8 @@ def main_check(path_target=None, checkId=-1):
     conf = configparser.ConfigParser()
     conf.read(path_current + '/app.conf')  # 文件路径
     path_target_flag = conf.get("env", "state")  # 获取指定section 的option值
+    filechecking_flag = conf.get("func", "filechecking")
+
     print(path_target_flag)
     if (path_target_flag=='dev'):
         # path_target = os.path.join(path_current, "图纸/磁各庄站")
@@ -109,20 +111,23 @@ def main_check(path_target=None, checkId=-1):
 
     ###########################
     # 对照目录判断缺少文件
-    checkFiles=set(list_of_content.values())
-    print('###############################################')
-    #print(checkFiles)
-    #print(data_CAD.keys())
-    #print(data_CAD['constructionSteps'].keys())
-    for dirname in data_CAD.keys():
-        for file_in_dir in data_CAD[dirname].keys():
-            checkFiles.discard(file_in_dir)
+    if filechecking_flag != 'front':
+        checkFiles = set(list_of_content.values())
+        print('###############################################')
+        # print(checkFiles)
+        # print(data_CAD.keys())
+        # print(data_CAD['constructionSteps'].keys())
+        for dirname in data_CAD.keys():
+            for file_in_dir in data_CAD[dirname].keys():
+                checkFiles.discard(file_in_dir)
 
-    #checkFiles.discard(str(data_CAD['constructionSteps'].keys()))
-    print('未检测到以下图纸：'+str(checkFiles))
-    for filename_print in checkFiles:
-        error_ = {'file': str(filename_print), 'errorCode': 414, 'errorTitle': '缺少部分CAD(extractions)提取结果','path': []}
-        log_error(error_, errors)
+        # checkFiles.discard(str(data_CAD['constructionSteps'].keys()))
+        print('未检测到以下图纸：' + str(checkFiles))
+        for filename_print in checkFiles:
+            error_ = {'file': str(filename_print), 'errorCode': 414, 'errorTitle': '缺少部分CAD(extractions)提取结果',
+                      'path': []}
+            log_error(error_, errors)
+
 
     all_errors.extend(errors)
 

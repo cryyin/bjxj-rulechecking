@@ -256,7 +256,7 @@ def rule_4_3(data_CAD, data_calc):
     bounding = {}
     for filename, section in data_section.items():
         for idx, content in enumerate(section['section']):
-            if 'embedment_depth' in content and content['embedment_depth']:
+            if 'embedment_depth' in content and content['embedment_depth'] and content['title'] != None:
                 sec_name = re.search(r'\d-\d', content['title']).group(0)
                 embed_depth_CAD[sec_name] = content['embedment_depth']
                 bounding[sec_name] = content['bounding']

@@ -58,10 +58,14 @@ class ReceiveHandler(tornado.web.RequestHandler, ABC):
 
 
                 print("Start rules checking")
+                localtime = time.asctime(time.localtime(time.time()))
+                print ("开始时间为 :", localtime)
                 report = main_check(file_dir, checkId)
                 with open(os.path.join(file_dir, str(checkId) + '.json'), 'w') as f:
                     json.dump(report, f, ensure_ascii=False, indent=4)
                 print("End rules checking")
+                localtime = time.asctime(time.localtime(time.time()))
+                print("结束时间为 :", localtime)
             else:  # 没有提交zip 文件
                 return_data = json.dumps({"code": 208, "msg": "没有上传zip文件", "data": {"checkId": ""}}, ensure_ascii=False)
                 print(return_data)

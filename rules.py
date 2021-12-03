@@ -256,15 +256,17 @@ def rule_4_3(data_CAD, data_calc):
     bounding = {}
     for filename, section in data_section.items():
         for idx, content in enumerate(section['section']):
-            if 'embedment_depth' in content and content['embedment_depth'] and content['title'] != None:
-                sec_name = re.search(r'\d-\d', content['title']).group(0)
-                embed_depth_CAD[sec_name] = content['embedment_depth']
-                bounding[sec_name] = content['bounding']
-            else:
-                error_ = {'file': filename, 'errorCode': 418, 'errorTitle': 'CAD图纸中缺少嵌固深度',
-                          'errorMsg': "图纸{:s} 中缺少{:s} 的嵌固深度".format(filename, content['title']),
-                          'path': content['bounding']}
-                log_error(error_, errors)
+            if content['title'] != None:
+                if 'embedment_depth' in content and content['embedment_depth']:
+                    sec_name = re.search(r'\d-\d', content['title']).group(0)
+                    embed_depth_CAD[sec_name] = content['embedment_depth']
+                    bounding[sec_name] = content['bounding']
+                else:
+                    error_ = {'file': filename, 'errorCode': 418, 'errorTitle': 'CAD图纸中缺少嵌固深度',
+                              'errorMsg': "图纸{:s} 中缺少{:s} 的嵌固深度".format(filename, content['title']),
+                              'path': content['bounding']}
+                    log_error(error_, errors)
+
 
 
     embed_depth_calc = {}  # 计算书中的嵌固深度
@@ -278,7 +280,7 @@ def rule_4_3(data_CAD, data_calc):
             embed_depth_calc[sec_name] = float(value)
     else:
         for key in bounding:
-            error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "计算书中缺少嵌固深度信息",
+            error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "请核对计算书中嵌固深度信息",
                       'path': bounding[key]}
             log_error(error_, errors)
 
@@ -381,7 +383,7 @@ def rule_4_4(data_CAD, data_calc, list_of_content=None):
     if '钢支撑轴力' in data_calc and data_calc['钢支撑轴力']:
         zhouli_calc = data_calc['钢支撑轴力']
     else:
-        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': '计算书中缺少钢支撑轴力', 'path': []}
+        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': '请核对计算书中钢支撑轴力', 'path': []}
         log_error(error_, errors)
         return errors
     # 匹配图纸和计算书中的轴力值表
@@ -461,17 +463,17 @@ def rule_6(data_CAD):
                 flag_flange = True
         if not flag_shear:
             for file, content in data_internal.items():
-                error_ = {'file': file, 'errorCode': 2009, 'errorTitle': '图纸中缺少肋板、抗剪措施', 'path': []}
+                error_ = {'file': file, 'errorCode': 2009, 'errorTitle': '请核对图纸中肋板、抗剪措施', 'path': []}
                 log_error(error_, errors)
 
         if not flag_anti_fall:
             for file, content in data_internal.items():
-                error_ = {'file': file, 'errorCode': 2010, 'errorTitle': '钢支撑未见防脱落措施', 'path': []} #图纸中缺少必要信息(防脱落措施)
+                error_ = {'file': file, 'errorCode': 2010, 'errorTitle': '请核对钢支撑防脱落措施', 'path': []} #图纸中缺少必要信息(防脱落措施)
                 log_error(error_, errors)
 
         if not flag_flange:
             for file, content in data_internal.items():
-                error_ = {'file': file, 'errorCode': 2011, 'errorTitle': '图纸中缺少法兰盘', 'path': []}
+                error_ = {'file': file, 'errorCode': 2011, 'errorTitle': '请核对图纸中法兰盘', 'path': []}
                 log_error(error_, errors)
     else:
         error_ = {'file': '', 'errorCode': 409, 'errorTitle': '缺少内支撑详图(enclosureStructureDetailDrawing)提取结果',
@@ -903,37 +905,35 @@ def rule_8_2(data_CAD, list_of_content=None):
                 if flag_Landsubsidence and flag_ControlStandard:
                     # 地表沉降变形控制标准判断
                     print(type(tableArray[idx_Landsubsidence_x, idx_ControlStandard_y]))
-                    if (int(re.search("(\d\d)mm", tableArray[idx_Landsubsidence_x, idx_ControlStandard_y]).group(1)) > 30
-                            or int(re.search("(\d\d)mm", tableArray[idx_Landsubsidence_x, idx_ControlStandard_y]).group(
-                                1)) < 20):
-                        error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
-                                  'errorMsg': "地表沉降变形控制标准与规范不一致, 图纸中为：{:s}，应>=20且<=30".format(
-                                      re.search("(\d\d)mm",
-                                               tableArray[idx_Landsubsidence_x, idx_ControlStandard_y]).group(
-                                          1)),
-                                  'path': boundings[count_1]}
-                        log_error(error_, errors)
+                    all_outOfBound_list=re.findall("(\d\d)mm", tableArray[idx_Landsubsidence_x, idx_ControlStandard_y])
+                    for i in all_outOfBound_list:
+                        if (int(i) > 30
+                                or int(i) < 20):
+                            error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
+                                      'errorMsg': "地表沉降变形控制标准与规范不一致, 图纸中为：{:s}，应>=20且<=30".format(i),
+                                      'path': boundings[count_1]}
+                            log_error(error_, errors)
+
                 if flag_VerticalDisplacement and flag_ControlStandard:
                     # 桩顶竖向位移判断
-                    if (int(re.search("(\d\d)mm", tableArray[idx_VerticalDisplacement_x, idx_ControlStandard_y]).group(
-                            1)) != 10):
-                        error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
-                                  'errorMsg': "桩顶竖向位移与规范不一致, 图纸中为：{:s}，应为10mm".format(
-                                      re.search("(\d\d)mm",
-                                               tableArray[idx_VerticalDisplacement_x, idx_ControlStandard_y]).group(1)),
-                                  'path': boundings[count_1]}
-                        log_error(error_, errors)
+                    all_outOfBound_list = re.findall("(\d\d)mm", tableArray[idx_VerticalDisplacement_x, idx_ControlStandard_y])
+                    for i in all_outOfBound_list:
+                        if (int(i) != 10):
+                            error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
+                                      'errorMsg': "桩顶竖向位移与规范不一致, 图纸中为：{:s}，应为10mm".format(i),
+                                      'path': boundings[count_1]}
+                            log_error(error_, errors)
+
                 if flag_HorizontalDisplacement and flag_ControlStandard:
                     # 桩顶水平位移判断
-                    if (int(re.search("(\d\d)mm", tableArray[idx_HorizontalDisplacement_x, idx_ControlStandard_y]).group(
-                            1)) != 10):
-                        error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
-                                  'errorMsg': "桩顶水平位移与规范不一致, 图纸中为：{:s}，应为10mm".format(
-                                      re.search("(\d\d)mm",
-                                               tableArray[idx_HorizontalDisplacement_x, idx_ControlStandard_y]).group(
-                                          1)),
-                                  'path': boundings[count_1]}
-                        log_error(error_, errors)
+                    all_outOfBound_list = re.findall("(\d\d)mm", tableArray[idx_HorizontalDisplacement_x, idx_ControlStandard_y])
+                    for i in all_outOfBound_list:
+                        if (int(i) != 10):
+                            error_ = {'file': table_id, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
+                                      'errorMsg': "桩顶水平位移与规范不一致, 图纸中为：{:s}，应为10mm".format(i),
+                                      'path': boundings[count_1]}
+                            log_error(error_, errors)
+
 
                 '''freq_rule = np.array([
                                         ['序号','监测项目','监测仪器及元件','测点布置','监测精度','变形控制标准','监测频率'],
@@ -1033,7 +1033,7 @@ def rule_10_1(data, regus):
     print("10.1 设计依据检查开始...")
 
     if '设计依据' not in data:
-        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "计算书中缺少设计规范", 'path': []}
+        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "请核对计算书设计规范", 'path': []}
         log_error(error_, errors)
 
     for i, item in enumerate(data['设计依据']):
@@ -1093,12 +1093,12 @@ def rule_10_4(data):
     #     log_error(error_,errors)
 
     if '设计标准' not in data or '地下结构应按抗浮设防水位进行抗浮稳定性验算' not in data['设计标准']:
-        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "计算书中缺少 地下结构抗浮稳定性验算 的说明",
+        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "请核对计算书中 地下结构抗浮稳定性验算的设计标准 的说明",
                   'path': []}
         log_error(error_, errors)
 
     if '设计标准' not in data or '砂性土地层' not in data['设计标准']:
-        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "计算书中缺少 地层参数 的说明",
+        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "请核对计算书中 地层参数设计标准 的说明",
                   'path': []}
         log_error(error_, errors)
 
@@ -1113,7 +1113,7 @@ def rule_10_5(data):
     print("10.5 支护结构计算 审查开始...")
 
     if '钢支撑计算' not in data or not data['钢支撑计算']:
-        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "计算书中缺少钢支撑计算结果", 'path': []}
+        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "请核对计算书中钢支撑计算结果", 'path': []}
         log_error(error_, errors)
         return errors
 
@@ -1129,12 +1129,12 @@ def rule_10_5(data):
                     log_error(error_, errors)
             else:
                 error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整',
-                          'errorMsg': "计算书中缺少 {:s}钢支撑{:s} 信息".format(sec_name, item_name), 'path': []}
+                          'errorMsg': "请核对计算书中 {:s}钢支撑{:s} 信息".format(sec_name, item_name), 'path': []}
                 log_error(error_, errors)
 
     # 10.5.3 钢腰梁及连系梁计算
     if '钢腰梁及连系梁计算' not in data or not data['钢腰梁及连系梁计算']:
-        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "计算书中缺少钢腰梁及连系梁计算结果",
+        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "请核对计算书中钢腰梁及连系梁计算结果",
                   'path': []}
         log_error(error_, errors)
         return errors
@@ -1150,7 +1150,7 @@ def rule_10_5(data):
                 log_error(error_, errors)
         else:
             error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整',
-                      'errorMsg': "计算书中缺少钢腰梁及连系梁{:s}验算信息".format(item_name), 'path': []}
+                      'errorMsg': "请核对计算书中钢腰梁及连系梁{:s}验算信息".format(item_name), 'path': []}
             log_error(error_, errors)
 
     print("10.5 支护结构计算 审查完毕。\n")

@@ -473,7 +473,7 @@ def rule_6(data_CAD):
 
         if not flag_flange:
             for file, content in data_internal.items():
-                error_ = {'file': file, 'errorCode': 2011, 'errorTitle': '请核对图纸中法兰盘', 'path': []}
+                error_ = {'file': file, 'errorCode': 2011, 'errorTitle': '请核对图纸中法兰盘螺栓连接方式', 'path': []}
                 log_error(error_, errors)
     else:
         error_ = {'file': '', 'errorCode': 409, 'errorTitle': '缺少内支撑详图(enclosureStructureDetailDrawing)提取结果',
@@ -1069,7 +1069,7 @@ def rule_10_2(data):
     errors = []
     print("10.2 计算参数检查开始...")
     if ("荷载参数" not in data) or ("20kPa" not in data['荷载参数']):
-        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "缺少荷载参数说明", 'path': []}
+        error_ = {'file': '计算书', 'errorCode': 1002, 'errorTitle': '计算书中信息表达不完整', 'errorMsg': "请核对荷载参数说明", 'path': []}
         log_error(error_, errors)
 
     print("10.2 计算参数检查完毕。\n")

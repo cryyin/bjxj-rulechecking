@@ -120,7 +120,7 @@ def rule_3_3(data_CAD, data_calc):
                         if diameter not in diameter_dict:
                             if diameter < 600 or diameter > 1200:
                                 error_ = {'file': filename, 'errorCode': 2001, 'errorTitle': '桩径不满足要求',
-                                          'errorMsg': '桩{:s}的桩径为{:.0f}，不满足 600mm~1200mm 的要求'.format(pile['name'],
+                                          'errorMsg': '桩{:s}的桩径为{:.0f}，不满足计算要求'.format(pile['name'],
                                                                                                     diameter),
                                           'path': pile['bounding']}
                                 log_error(error_, errors)
@@ -145,7 +145,7 @@ def rule_3_3(data_CAD, data_calc):
                                 distance_clean = distance - diameter
                                 if distance_clean < 150 or distance_clean > 1000:
                                     error_ = {'file': filename, 'errorCode': 2002, 'errorTitle': '桩间净距不满足要求',
-                                              'errorMsg': "桩{:s}的桩间净距为{:.0f}, 不满足150mm~1000mm的要求".format(pile['name'],
+                                              'errorMsg': "桩{:s}的桩间净距为{:.0f}, 不满足计算要求".format(pile['name'],
                                                                                                          distance_clean),
                                               'path': pile['bounding']}
                                     log_error(error_, errors)
@@ -989,14 +989,14 @@ def rule_8_2(data_CAD, list_of_content=None):
     if 'monitoringMeasurementSection' in data_CAD and data_CAD['monitoringMeasurementSection']:
         for filename, content in data_CAD['monitoringMeasurementSection'].items():
             if 'mark' in content:
-                if content['mark'] and len(content['mark']) == 2:
+                if content['mark']: #and len(content['mark']) == 2:
                     for mark in content['mark']:
                         if mark['value'] and re.search(r'\d+\.\d+m|\dm', mark['value']):
                             distance = re.search(r'\d+\.\d+|\d',
                                                  re.search(r'\d+\.\d+m|\dm', mark['value']).group(0)).group(0)
                             if float(distance) != 1:
-                                error_ = {'file': filename, 'errorCode': 2012, 'errorTitle': '监测点的竖向布置间距不符合要求',
-                                          'errorMsg': "监测点的竖向布置间距不符合要求,图纸中为{:s}m,标准为1m".format(distance),
+                                error_ = {'file': filename, 'errorCode': 2012, 'errorTitle': '请核对监测点的竖向布置间距',
+                                          'errorMsg': "请核对监测点的竖向布置间距,图纸中为{:s}m,标准为1m".format(distance),
                                           'path': mark['bounding']}
                                 log_error(error_, errors)
                         else:

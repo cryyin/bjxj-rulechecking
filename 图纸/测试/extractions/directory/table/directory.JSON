@@ -2,10 +2,10 @@
     "tableGroup": [
         {
             "bounding": [
-                "35643,15392",
-                "35643,37662",
-                "52643,37662",
-                "52643,15392"
+                "810994,483690",
+                "810994,505960",
+                "827994,505960",
+                "827994,483690"
             ],
             "table": [
                 {
@@ -52,7 +52,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-001A"
+                                "BJXJC-SS-403-01-01-03-JG-001"
                             ],
                             "table": []
                         },
@@ -84,7 +84,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-002A"
+                                "BJXJC-SS-403-01-01-03-JG-002"
                             ],
                             "table": []
                         },
@@ -116,7 +116,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-003A"
+                                "BJXJC-SS-403-01-01-03-JG-003"
                             ],
                             "table": []
                         },
@@ -148,7 +148,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-004A"
+                                "BJXJC-SS-403-01-01-03-JG-004"
                             ],
                             "table": []
                         },
@@ -180,7 +180,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-005A"
+                                "BJXJC-SS-403-01-01-03-JG-005"
                             ],
                             "table": []
                         },
@@ -212,7 +212,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-006A"
+                                "BJXJC-SS-403-01-01-03-JG-006"
                             ],
                             "table": []
                         },
@@ -244,14 +244,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-007A"
+                                "BJXJC-SS-403-01-01-03-JG-007"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "总平面图"
+                                "施工总平面图"
                             ],
                             "table": []
                         },
@@ -276,7 +276,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-008A"
+                                "BJXJC-SS-403-01-01-03-JG-008"
                             ],
                             "table": []
                         },
@@ -308,7 +308,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-009A"
+                                "BJXJC-SS-403-01-01-03-JG-009"
                             ],
                             "table": []
                         },
@@ -340,7 +340,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-010A"
+                                "BJXJC-SS-403-01-01-03-JG-010"
                             ],
                             "table": []
                         },
@@ -372,7 +372,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-011A"
+                                "BJXJC-SS-403-01-01-03-JG-011"
                             ],
                             "table": []
                         },
@@ -404,7 +404,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-012A"
+                                "BJXJC-SS-403-01-01-03-JG-012"
                             ],
                             "table": []
                         },
@@ -436,7 +436,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-013A"
+                                "BJXJC-SS-403-01-01-03-JG-013"
                             ],
                             "table": []
                         },
@@ -468,7 +468,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-014A"
+                                "BJXJC-SS-403-01-01-03-JG-014"
                             ],
                             "table": []
                         },
@@ -500,7 +500,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-015A"
+                                "BJXJC-SS-403-01-01-03-JG-015"
                             ],
                             "table": []
                         },
@@ -532,7 +532,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-016A"
+                                "BJXJC-SS-403-01-01-03-JG-016"
                             ],
                             "table": []
                         },
@@ -564,14 +564,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-017A"
+                                "BJXJC-SS-403-01-01-03-JG-017"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "围护结构配筋图"
+                                "围护结构6-6剖面图"
                             ],
                             "table": []
                         },
@@ -596,14 +596,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-018A"
+                                "BJXJC-SS-403-01-01-03-JG-018"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "内支撑详图（一）"
+                                "围护结构7-7剖面图"
                             ],
                             "table": []
                         },
@@ -628,14 +628,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-019A"
+                                "BJXJC-SS-403-01-01-03-JG-019"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "内支撑详图（二）"
+                                "围护桩配筋图（A、B型）"
                             ],
                             "table": []
                         },
@@ -660,14 +660,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-020A"
+                                "BJXJC-SS-403-01-01-03-JG-020"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "内支撑详图（三）"
+                                "围护桩配筋图（C型）"
                             ],
                             "table": []
                         },
@@ -692,14 +692,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-021A"
+                                "BJXJC-SS-403-01-01-03-JG-021"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "内支撑详图（四）"
+                                "内支撑详图（一）"
                             ],
                             "table": []
                         },
@@ -724,14 +724,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-022A"
+                                "BJXJC-SS-403-01-01-03-JG-022"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "内支撑详图（五）"
+                                "内支撑详图（二）"
                             ],
                             "table": []
                         },
@@ -756,14 +756,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-023A"
+                                "BJXJC-SS-403-01-01-03-JG-023"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "内支撑详图（六）"
+                                "内支撑详图（三）"
                             ],
                             "table": []
                         },
@@ -788,14 +788,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-024A"
+                                "BJXJC-SS-403-01-01-03-JG-024"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "施工步序图"
+                                "内支撑详图（四）"
                             ],
                             "table": []
                         },
@@ -820,14 +820,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-025A"
+                                "BJXJC-SS-403-01-01-03-JG-025"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "基坑监控量测剖面图"
+                                "内支撑详图（五）"
                             ],
                             "table": []
                         },
@@ -852,14 +852,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "BJXJC-SS-403-01-01-02-JG-026A"
+                                "BJXJC-SS-403-01-01-03-JG-026"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "基坑监控量测平面图"
+                                "内支撑详图（六）"
                             ],
                             "table": []
                         },
@@ -884,14 +884,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "BJXJC-SS-403-01-01-03-JG-027"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "施工步序图"
                             ],
                             "table": []
                         },
@@ -916,14 +916,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "BJXJC-SS-403-01-01-03-JG-028"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "基坑监控量测平面图"
                             ],
                             "table": []
                         },
@@ -948,14 +948,14 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "BJXJC-SS-403-01-01-03-JG-029"
                             ],
                             "table": []
                         },
                         {
                             "category": "TEXT",
                             "data": [
-                                "--"
+                                "基坑监控量测剖面图"
                             ],
                             "table": []
                         },
@@ -973,7 +973,7 @@
                         {
                             "category": "TEXT",
                             "data": [
-                                "30"
+                                "--"
                             ],
                             "table": []
                         },
@@ -1004,10 +1004,10 @@
         },
         {
             "bounding": [
-                "54643,15392",
-                "54643,37662",
-                "71643,37662",
-                "71643,15392"
+                "829994,483690",
+                "829994,505960",
+                "846994,505960",
+                "846994,483690"
             ],
             "table": [
                 {

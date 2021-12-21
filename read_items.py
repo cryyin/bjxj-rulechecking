@@ -419,7 +419,11 @@ def read_calculation(path):
                     if D!=[]:
                         if D[0][0] in type2id[title]:
                             for order in type2id[title][D[0][0]]:
-                                data["钢支撑轴力"][title][order] = int(float(D[0][1])*1.414)
+                                data["钢支撑轴力"][title][order] = float(D[0][1])*1.414
+                                #data["钢支撑轴力"][title][order] = int(float(D[0][1]) * 1.414)
+                                #print(float(D[0][1]))
+                                #print(float(D[0][1])*1.414)
+                                #print(int(float(D[0][1])*1.414))
                                 #print(title,D[0][0],order,D[0][1])
         #print(data["钢支撑轴力"][title])
     ############################################################################

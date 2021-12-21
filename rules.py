@@ -508,13 +508,13 @@ def rule_7_1(data_CAD):
                             distances.append(float(re.search(r"\d+.\d+|\d+", temp).group(0)))
                             BasicUnit=re.search(r"mm|m", temp).group(0)
                         for distance in distances:
-                            if BasicUnit == 'mm' and distance != 500.0:
+                            if BasicUnit == 'mm' and distance > 500.0:
                                 error_ = {'file': filename, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
-                                          'errorMsg': step + "架设间距不满足 0.5m 要求", 'path': []}
+                                          'errorMsg': step + "基坑开挖面至支撑架设中心线间距应不大于0.5m，请核对图中数值", 'path': []}
                                 log_error(error_, errors)
-                            elif BasicUnit == 'm' and distance != 0.5:
+                            elif BasicUnit == 'm' and distance > 0.5:
                                 error_ = {'file': filename, 'errorCode': 2005, 'errorTitle': '图纸与规范不符',
-                                          'errorMsg': step + "架设间距不满足 0.5m 要求", 'path': []}
+                                          'errorMsg': step + "基坑开挖面至支撑架设中心线间距应不大于0.5m，请核对图中数值", 'path': []}
                                 log_error(error_, errors)
 
                     # 检测支撑强度

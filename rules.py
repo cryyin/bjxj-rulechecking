@@ -415,7 +415,7 @@ def rule_4_4(data_CAD, data_calc, list_of_content=None):
                             error_ = {'file': sec_table[2],
                                       'errorCode': 3002,
                                       'errorTitle': '图纸与计算书信息不符',
-                                      'errorMsg': "剖面{:s}钢支撑轴力值与计算书不符，以 {:s} 号钢支撑为例，图纸中为 {:s}, 计算书中为 {:s}，其他请人工核对".format(sec_id,line_no,supportForce_values_CAD,value_calc),
+                                      'errorMsg': "剖面{:s}钢支撑轴力值与计算书不符，以 {:s} 道钢支撑为例，图纸中为 {:s}, 计算书中为 {:s}，其他请核对".format(sec_id,line_no,supportForce_values_CAD,value_calc),
                                       'path': sec_table[1]}
                             log_error(error_, errors)
                             break                            #只显示一条意见

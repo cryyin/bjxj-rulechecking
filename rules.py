@@ -395,11 +395,21 @@ def rule_4_4(data_CAD, data_calc, list_of_content=None):
                     for line_no, value in sec_table_calc.items():
                         value_calc = re.search(r'\d+.\d+|\d+', str(value)).group(0)
                         all_values_CAD = ''
+                        zhouli_type_flag = 0
                         if re.search(r'^\d+$', ''.join(line_no)) is None:
                             temp_line_no = re.search(r'第(.)道', ''.join(line_no))
                             line_no = chinese2arabic[temp_line_no.group(1)]
                         for col_name, col_value in sec_table[0][line_no].items():
-                            all_values_CAD += ' '.join(re.findall(r'\d+.\d+|\d+', col_value)) + ' '
+                            if re.search(r'.*斜撑.*', col_name) is None:
+                                for items_in_col_value in re.findall(r'\d+.\d+|\d+', col_value):
+                                    temp_1 = round(float(items_in_col_value) * (2 ** 0.5), 1)
+                                    print('file:'+str(sec_table[2])+'刨面'+str(sec_id)+' '+str(line_no)+'道存在直撑数据：'+items_in_col_value+'，转换为斜撑：'+str(temp_1))
+                                    items_in_col_value = round(float(items_in_col_value) * (2 ** 0.5),1)
+                                    all_values_CAD += ' ' + str(items_in_col_value) + ' '
+
+                            else:
+                                all_values_CAD += ' '.join(re.findall(r'\d+.\d+|\d+', col_value)) + ' '
+
                         #if value_calc not in all_values_CAD:  # 判断图纸中的轴力与计算书中的轴力相不相等
                             '''error_ = {'file': sec_table[2],
                                       'errorCode': 3002,
@@ -410,15 +420,24 @@ def rule_4_4(data_CAD, data_calc, list_of_content=None):
                                                                                                           value_calc),
                                       'path': sec_table[1]}
                             # error_['file']='计算书'''
-                        supportForce_values_CAD=all_values_CAD.split()[0]
-                        if supportForce_values_CAD < value_calc:
+
+
+                        all_values_CAD_temp = all_values_CAD.split()
+                        all_values_CAD_max = 0
+                        for supportForce_values_CAD in all_values_CAD_temp:
+                            if float(supportForce_values_CAD) >= float(value_calc):
+                                zhouli_type_flag = 1
+                            if float(supportForce_values_CAD) > all_values_CAD_max:
+                                all_values_CAD_max = float(supportForce_values_CAD)
+                        if not zhouli_type_flag:
                             error_ = {'file': sec_table[2],
                                       'errorCode': 3002,
                                       'errorTitle': '图纸与计算书信息不符',
-                                      'errorMsg': "剖面{:s}钢支撑轴力值与计算书不符，以 {:s} 道钢支撑为例，图纸中为 {:s}, 计算书中为 {:s}，其他请核对".format(sec_id,line_no,supportForce_values_CAD,value_calc),
+                                      'errorMsg': "剖面{:s}钢支撑轴力值与计算书不符，以 {:s} 道钢支撑为例，图纸中为 {:s}, 计算书中为 {:s}，其他请核对".format(
+                                          sec_id, line_no, str(all_values_CAD_max), value_calc),
                                       'path': sec_table[1]}
                             log_error(error_, errors)
-                            break                            #只显示一条意见
+                            break  # 只显示一条意见
 
     print("4.4 钢支撑轴力值检查完毕。\n")
     return errors
